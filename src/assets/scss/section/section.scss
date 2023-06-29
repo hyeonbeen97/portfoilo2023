@@ -167,6 +167,9 @@ body {
     color: #858585;
 }
 .deco__wst {
+    // border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    // text-decoration: line-through;
     display: inline-block;
     position: absolute;
     left: 31.8%;
@@ -201,16 +204,34 @@ body {
         transition: all 1s;
         img {
             filter: saturate(0);
-        box-shadow: 2px 2px 5px #828282;
+        box-shadow: 2px 2px 5px #615f5f;
             &:hover {
                     filter: saturate(1);
                     transform: scale(101%);
                     
                 }
+                position: relative;
         }
-        
-    
     }
+            .circle2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #000;
+            // background-color: #000000;
+            text-align: center;
+            line-height: 200px;
+            color: #000000;
+            font-size: 30px;
+            font-family:"Cormorant Garamond";
+            left: 115vh;
+            top: 60%;
+            transition: all 0.5s;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
 }
 
 
