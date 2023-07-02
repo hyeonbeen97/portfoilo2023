@@ -199,6 +199,78 @@
             data processing and business logic. Thank you!
           </div>
         </div>
+        <div class="script__start">
+          <P>SCRIPT</P>
+        </div>
+        <div class="script__box">
+          <div class="script__section">
+            <h4>Mouse<br><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에 조명이 밝혀
+              지는 효과, 또는 이미지가 3D로 움직이는 효과를 주었습니다. 
+              그리고 특정 텍스트에 마우스를 오버했을 때 이미지가 나타나는 효과와 글씨가
+              불빛이 들어오는 효과, 마우스를 따라다니는 도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img1">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg">
+            </div>
+          </div>
+          <div class="script__section">
+            <h4>Slider<br><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에 조명이 밝혀
+              지는 효과, 또는 이미지가 3D로 움직이는 효과를 주었습니다.
+              그리고 특정 텍스트에 마우스를 오버했을 때 이미지가 나타나는 효과와 글씨가
+              불빛이 들어오는 효과, 마우스를 따라다니는 도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img2">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg">
+            </div>
+          </div>
+          <div class="script__section">
+            <h4>Pallax<br><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에 조명이 밝혀
+              지는 효과, 또는 이미지가 3D로 움직이는 효과를 주었습니다.
+              그리고 특정 텍스트에 마우스를 오버했을 때 이미지가 나타나는 효과와 글씨가
+              불빛이 들어오는 효과, 마우스를 따라다니는 도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img3">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg">
+            </div>
+          </div>
+          <div class="script__section">
+            <h4>Quiz<br><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에 조명이 밝혀
+              지는 효과, 또는 이미지가 3D로 움직이는 효과를 주었습니다.
+              그리고 특정 텍스트에 마우스를 오버했을 때 이미지가 나타나는 효과와 글씨가
+              불빛이 들어오는 효과, 마우스를 따라다니는 도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img4">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg">
+            </div>
+          </div>
+        </div>
+        <div class="script__section__study">
+          <img src="./src/assets/images/study.png" alt="study">
+          <a href="https://hyeonbeen97.github.io/web2023/" target="_blank">
+            script<br>study<br>view
+          </a>
+        </div>  
+        <div class="thank">
+          <div>Thank you for looking at </div>
+          <div> my portfolio.</div>
+        </div>
+        <div class="contact__wrap">
+          <div class="contact__start">
+            <p>contact</p>
+          </div>
+        </div>
       </section>
     </main>
     <script type="module" src="/main.js"></script>
@@ -227,6 +299,10 @@
       gsap.set(".deco__wst2", { rotation: -90, y: 0, x: 800 });
       gsap.set(".deco__wst3", { rotation: -90, y: 0, x: 650 });
       gsap.set(".wst__img img", { scale: 3 });
+      gsap.set(".script__img1 img", { scale: 2 });
+      gsap.set(".script__img2 img", { scale: 2 });
+      gsap.set(".script__img3 img", { scale: 2 });
+      gsap.set(".script__img4 img", { scale: 2 });
       gsap.set(".wst__img__mini img", { scale: 3 });
       gsap.set(".wst__desc", { autoAlpha: 0 });
       gsap.set(".wst__desc__e", { autoAlpha: 0 });
@@ -414,7 +490,7 @@
           start: "left 25%",
           end: "left 30%",
           scrub: 1,
-          markers: true,
+          markers: false,
         },
       });
 
@@ -436,7 +512,7 @@
           containerAnimation: scrollTween,
           start: "left 67%",
           end: "right left  ",
-          markers: true,
+          markers: false,
         },
       });
       gsap.to(".react__desc__e", {
@@ -550,8 +626,65 @@
           markers: false,
         },
       });
+      //-----------------스크립트
 
-      // window.addEventListener('resize', function() {
+      gsap.to(".script__img1 img", {
+          duration: 0.1,
+          scale: 1,
+          ease: "Bounce.easeIn ",
+          scrollTrigger: {
+            trigger: ".script__img1",
+            containerAnimation: scrollTween,
+            start: "left 70%",
+            end: "rigth left",
+          scrub: 1, // 스크롤 속도에 따라 애니메이션 속도 조절
+
+            markers: false,
+          },
+        });
+      gsap.to(".script__img2 img", {
+          duration: 0.1,
+          scale: 1,
+          ease: "Bounce.easeIn ",
+          scrollTrigger: {
+            trigger: ".script__img2",
+            containerAnimation: scrollTween,
+            start: "left 70%",
+            end: "rigth left",
+          scrub: 1, // 스크롤 속도에 따라 애니메이션 속도 조절
+
+            markers: false,
+          },
+        });
+      gsap.to(".script__img3 img", {
+          duration: 0.1,
+          scale: 1,
+          ease: "Bounce.easeIn ",
+          scrollTrigger: {
+            trigger: ".script__img3",
+            containerAnimation: scrollTween,
+            start: "left 70%",
+            end: "rigth left",
+          scrub: 1, // 스크롤 속도에 따라 애니메이션 속도 조절
+
+            markers: false,
+          },
+        });
+      gsap.to(".script__img4 img", {
+          duration: 0.1,
+          scale: 1,
+          ease: "Bounce.easeIn ",
+          scrollTrigger: {
+            trigger: ".script__img4",
+            containerAnimation: scrollTween,
+            start: "left 70%",
+            end: "rigth left",
+          scrub: 1, // 스크롤 속도에 따라 애니메이션 속도 조절
+
+            markers: false,
+          },
+        });
+  // window.addEventListener('resize', function() {
       //     location.reload();
       // });
     </script>

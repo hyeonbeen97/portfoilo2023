@@ -263,7 +263,7 @@ body {
   // text-decoration: line-through;
   display: inline-block;
   position: absolute;
-  left: 510vh;
+  left: 28%;
   top: 0;
   text-transform: uppercase;
   font-family: "Cormorant Garamond";
@@ -366,7 +366,7 @@ body {
   // text-decoration: line-through;
   display: inline-block;
   position: absolute;
-  left: 46%;
+  left: 38%;
   top: 0;
   text-transform: uppercase;
   font-family: "Cormorant Garamond";
@@ -442,6 +442,163 @@ body {
     transition: all 0.5s;
     &:hover {
       transform: rotate(360deg);
+    }
+  }
+}
+//스크립트시작
+.script__start {
+  margin-left:30vh;  
+  line-height: 100vh;
+  width: 100px;
+  height: 100vh;
+    p {
+    cursor: pointer;
+  transition: all 2s;
+    &:hover {
+    transform: rotateX(360deg);
+    }
+  }
+}
+.script__box {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  width: 100vw;
+  padding: 5vh 0;
+  display: flex;
+  overflow: hidden;
+  .script__section {
+    width: 25%;
+    height: 90vh;
+    padding: 5vh 5vh;
+    border-right: 1px solid #000;
+  overflow: hidden;
+    h4 {
+      font-size: 6vh;
+      font-weight: 500 ;
+      font-family: "Cormorant Garamond";
+      letter-spacing: 2vh;
+      margin-bottom: 3vh;
+      em {
+      font-weight: lighter;
+      }
+    }
+    &:nth-child(4){
+    border-right: 0px solid #000;
+    }
+    .script__desc  {
+      margin-left: 0 !important; 
+      margin-bottom: 2vh;
+      word-break: keep-all;
+      font-size: 1.8vh;
+    }
+    a {
+      display: inline-block;
+      margin-bottom: 2vh;
+      font-size: 1vh;
+    }
+    .script__img1 {
+      width: 20vw;
+      height: 35vh;
+      overflow: hidden;
+      background-color: #3a2a2a;
+      img {
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      background-color: #c72f2f;
+      }
+    }
+    .script__img2 {
+      width: 20vw;
+      height: 35vh;
+      overflow: hidden;
+      background-color: #3a2a2a;
+      img {
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      background-color: #c72f2f;
+      }
+    }
+    .script__img3 {
+      width: 20vw;
+      height: 35vh;
+      overflow: hidden;
+      background-color: #3a2a2a;
+      img {
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      background-color: #c72f2f;
+      }
+    }
+    .script__img4 {
+      width: 20vw;
+      height: 35vh;
+      overflow: hidden;
+      background-color: #3a2a2a;
+      img {
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      background-color: #c72f2f;
+      
+      }
+    }
+  }
+}
+.script__section__study {
+  width: 500px;
+  border-right: 1px solid #000; 
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  a {
+    position: absolute;
+    text-align: right;
+    font-family: "Caveat";
+    font-size: 10vh;
+    transform: rotate(-7deg);
+    text-transform: uppercase;
+    top: 38%;
+    left: 35%;
+    &:hover {
+     transform: scale(110%);
+    }
+    
+  }
+}
+.thank {
+  width: 1400px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20vh;
+  padding-top: 10vh;
+}
+.contact__wrap {
+  width: 1200px;
+  height: 100vh;
+  background-color: #000;
+  .contact__start {
+    text-align: right;
+    padding: 2vh;
+    width: 150px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    p {
+    line-height: 100vh;
     }
   }
 }
