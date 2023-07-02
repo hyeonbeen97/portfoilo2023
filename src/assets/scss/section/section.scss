@@ -10,16 +10,14 @@ body {
   background-color: #000;
 }
 
-.parallax__item {
-  height: 100vh;
-  position: relative;
-}
 
 #section1 {
   width: 14000px;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
+    height: 100vh;
+      position: relative;
 }
 
 #section1 .img {
@@ -576,7 +574,6 @@ body {
   }
 }
 .thank {
-  width: 1400px;
   height: 100vh;
   background-color: #000;
   color: #fff;
@@ -584,21 +581,46 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 20vh;
-  padding-top: 10vh;
+  padding: 10vh;
 }
 .contact__wrap {
-  width: 1200px;
+  display: flex;
   height: 100vh;
   background-color: #000;
   .contact__start {
     text-align: right;
     padding: 2vh;
     width: 150px;
+  text-transform: uppercase;
     color: #fff;
     border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-left: 0.5px solid #fff;
     p {
     line-height: 100vh;
+    }
+  }
+  .contact {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 9vh 10vh;
+    h2 {
+  font-family: "Cormorant Garamond";
+      font-size: 20vh;
+      margin-bottom: 5vh;
+    }
+  }
+  .contact__main {
+    font-size: 2.5vh;
+    .info {
+      div {
+        margin-bottom: 2vh;
+      }
+    }
+    .link {
+      a {
+        display:block;
+        margin-bottom: 2vh;
+      }
     }
   }
 }
