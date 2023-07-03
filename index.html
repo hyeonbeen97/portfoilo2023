@@ -295,6 +295,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
       // 스무스 효과
       const lenis = new Lenis();
       function raf(time) {
@@ -390,19 +391,21 @@
         // tl.to(".wst__img img", { duration: 0.1, scale: 1, ease: Power4.out })
       }, 2000);
 
-      // 가로 모드
-      let sections = gsap.utils.toArray(".parallax__item");
-      let scrollTween = gsap.to(sections, {
-        x: -(13900 - window.innerWidth),
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#parallax__cont",
-          pin: true,
-          anticipatePin: 1,
-          scrub: 1,
-          end: "+=7000",
-        },
-      });
+        // 가로 모드
+
+    let sections = gsap.utils.toArray(".parallax__item");
+    let scrollTween = gsap.to(sections, {
+      x: -(document.querySelector("#parallax__cont").offsetWidth - window.innerWidth),
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#parallax__cont",
+        pin: true,
+        anticipatePin: 1,
+        scrub: 1,
+        end: "+=7000",
+      }
+    });
+
 
       // 섹션1
       gsap.to(".text-wrap .t2", {
@@ -702,6 +705,7 @@
   // window.addEventListener('resize', function() {
       //     location.reload();
       // });
+        });
     </script>
   </body>
 </html>

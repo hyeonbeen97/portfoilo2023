@@ -12,7 +12,7 @@ body {
 
 
 #section1 {
-  width: 14000px;
+  width: 100%;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -550,7 +550,7 @@ body {
   }
 }
 .script__section__study {
-  width: 500px;
+  width: 85vh;
   border-right: 1px solid #000; 
   position: relative;
   img {
