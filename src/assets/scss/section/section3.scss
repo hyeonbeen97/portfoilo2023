@@ -1,0 +1,103 @@
+#section3 {
+  background-color: #06f726;
+  .deco__wst2 {
+    width: 3600px;
+    // border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    // text-decoration: line-through;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond";
+    font-size: 20vh;
+    font-weight: 100;
+  }
+  .react__wrap {
+    display: flex;
+    position: relative;
+    padding: 10vh 0;
+    margin-left: 40vw;
+    .react__img {
+      width: 30vw;
+      height: 50vh;
+      visibility: hidden;
+      overflow: hidden;
+      object-fit: cover;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        transform-origin: left;
+        filter: brightness(0.9);
+      }
+    }
+    .deco__box {
+      width: 60vw;
+      height: 45vh;
+      position: absolute;
+      left: 10vh;
+      overflow: hidden;
+      object-fit: cover;
+      z-index: -1;
+      top: 20.5%;
+      .deco__boxbg {
+        background-color: rgba($color: #8b7764, $alpha: 0.6);
+        //box-shadow: 1px 2px 20px #5e5555 inset;
+        width: 100%;
+        height: 100%;
+        transform-origin: left;
+      }
+    }
+  }
+  .react__text__wrap {
+    position: relative;
+    padding: 10vh 0;
+    margin-left: 5vh;
+    h3 {
+      text-align: right;
+      font-family: jura;
+      font-size: 5vh;
+      margin-bottom: 10%;
+    }
+    .react__desc {
+      word-break: break-all;
+      text-align: right;
+      width: 63vh;
+      color: #ffffff;
+      font-weight: 100;
+      font-size: 1.6vh;
+      margin-bottom: 15%;
+    }
+    .react__desc__e {
+      width: 63vh;
+      word-break: break-all;
+      text-align: right;
+      width: 63vh;
+      color: #36270f;
+      font-weight: 100;
+      font-size: 1vh;
+    }
+    .circle3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      // border: 2px solid #000;
+      background-color: #251307;
+      text-align: center;
+      line-height: 200px;
+      color: #fff;
+      font-size: 30px;
+      font-family: "Cormorant Garamond";
+      left: -8vw;
+      top: 50%;
+      transition: all 0.5s;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+#section2 {
+  width: 2100px;
+  background: #0004ff;
+  position: relative;
+  .deco__wst {
+    width: 4300px;
+    position: absolute;
+    // border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    // text-decoration: line-through;
+    display: inline-block;
+    left: -95%;
+    top: 0;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond";
+    font-size: 20vh;
+    font-weight: 100;
+  }
+  .wst__wrap {
+    display: flex;
+    position: relative;
+    padding: 10vh 0;
+    margin-left: 20vh;
+
+    .wst__img {
+      width: 700px;
+      height: 80vh;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    .wst__img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+
+      transform-origin: left;
+    }
+    .wst__img__mini {
+      width: 330px;
+      height: 25vh;
+      top: 15%;
+      left: 27vw;
+      visibility: hidden;
+      position: absolute;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform-origin: left;
+
+        filter: saturate(0);
+        &:hover {
+          filter: saturate(1);
+          transform: scale(101%);
+        }
+        position: relative;
+      }
+    }
+    .circle2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      // border: 2px solid #000;
+      background-color: #23301b;
+      text-align: center;
+      line-height: 200px;
+      color: #fff;
+      font-size: 30px;
+      font-family: "Cormorant Garamond";
+      left: 39vw;
+      top: 30%;
+      transition: all 0.5s;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+    .wst__text__wrap {
+      word-break: keep-all;
+      width: 30vw;
+      margin-left: 60vh;
+      h3 {
+        font-family: jura;
+        font-size: 5vh;
+        margin-bottom: 5%;
+      }
+      .wst__desc {
+        color: #555;
+        display: inline-block;
+        font-size: 1.8vh;
+        line-height: 1.5;
+        margin-bottom: 18%;
+      }
+      .wst__desc__e {
+        text-align: right;
+        margin-left: 10%;
+        font-size: 1.5vh;
+        color: #9caa86;
+      }
+    }
+  }
+}
+//반응형
+@media (max-height: 750px) {
+  #section2 {
+    width: 1900px;
+    .wst__wrap {
+      margin-left: 30vh;
+    }
+    .deco__wst {
+      left: -110%;
+    }
+    .wst__img__mini {
+      height: 250px !important;
+      left: 30% !important;
+    }
+    .circle2 {
+      left: 45% !important;
+    }
+  }
+}
+@media (max-height: 650px) {
+  #section2 {
+    width: 1700px;
+    .deco__wst {
+      left: -126%;
+    }
+    .wst__img__mini {
+      height: 250px !important;
+      left: 30% !important;
+    }
+    .circle2 {
+      top: 40% !important;
+      left: 45% !important;
+    }
+  }
+}
+
+//section1
