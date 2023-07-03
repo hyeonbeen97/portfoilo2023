@@ -55,7 +55,7 @@
       word-break: break-all;
       text-align: right;
       width: 63vh;
-      color: #000;
+      color: #616161;
       font-weight: 100;
       font-size: 1.6vh;
       margin-bottom: 18%;
@@ -64,11 +64,11 @@
       word-break: break-all;
       text-align: right;
       width: 63vh;
-      color: #36270f;
+      color: #a3ddad;
       font-weight: 100;
-      font-size: 1vh;
+      font-size: 1.5vh;
     }
-    .circle3 {
+    .circle4 {
       position: absolute;
       width: 200px;
       height: 200px;
@@ -80,7 +80,7 @@
       color: #fff;
       font-size: 30px;
       font-family: "Cormorant Garamond";
-      left: -8vw;
+      left: -13vw;
       top: 50%;
       transition: all 0.5s;
       &:hover {
@@ -92,9 +92,9 @@
 //반응형
 @media (max-height: 750px) {
   #section4 {
-    width: 1700px;
+    width: 1500px !important;
     .deco__wst3 {
-      left: -145%;
+      left: -165% !important;
     }
     .react__desc__e {
       width: 160px !important;
@@ -103,9 +103,9 @@
 }
 @media (max-height: 650px) {
   #section4 {
-    width: 1500px;
+    width: 1300px !important;
     .deco__wst3 {
-      left: -163%;
+      left: -185% !important;
     }
     .react__desc__e {
       width: 250px !important;

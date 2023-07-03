@@ -1,0 +1,206 @@
+#section5 {
+  width: 2800px;
+  display: flex;
+
+  .script__start {
+    line-height: 100vh;
+    width: 100px;
+    height: 100vh;
+    p {
+      cursor: pointer;
+      transition: all 2s;
+      &:hover {
+        transform: rotateX(360deg);
+      }
+    }
+  }
+  .script__box {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    .script__section {
+      width: 25%;
+      height: 100vh;
+      padding: 5vh 5vh;
+      border-right: 1px solid #000;
+      overflow: hidden;
+      transition: all 0.5s;
+      &:nth-child(1) {
+        &:hover {
+          background-color: #888;
+          h4 {
+            color: #fff;
+          }
+          .script__desc {
+            color: #fff;
+          }
+          a {
+            color: #fff;
+          }
+        }
+      }
+      &:nth-child(2) {
+        &:hover {
+          background-color: #666;
+          h4 {
+            color: #fff;
+          }
+          .script__desc {
+            color: #fff;
+          }
+          a {
+            color: #fff;
+          }
+        }
+      }
+      &:nth-child(3) {
+        &:hover {
+          background-color: #444;
+          h4 {
+            color: #fff;
+          }
+          .script__desc {
+            color: #fff;
+          }
+          a {
+            color: #fff;
+          }
+        }
+      }
+      &:nth-child(4) {
+        &:hover {
+          background-color: #222;
+          h4 {
+            color: #fff;
+          }
+          .script__desc {
+            color: #fff;
+          }
+          a {
+            color: #fff;
+          }
+        }
+      }
+      h4 {
+        font-size: 6vh;
+        font-weight: 500;
+        font-family: "Cormorant Garamond";
+        letter-spacing: 2vh;
+        margin-bottom: 3vh;
+        em {
+          font-weight: lighter;
+        }
+      }
+      &:nth-child(4) {
+        border-right: 0px solid #000;
+      }
+      .script__desc {
+        margin-left: 0 !important;
+        margin-bottom: 2vh;
+        word-break: keep-all;
+        font-size: 1.8vh;
+      }
+      a {
+        display: inline-block;
+        margin-bottom: 2vh;
+        font-size: 1vh;
+      }
+      .script__img1 {
+        width: 20vw;
+        height: 35vh;
+        overflow: hidden;
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+        }
+      }
+      .script__img2 {
+        width: 20vw;
+        height: 35vh;
+        overflow: hidden;
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+        }
+      }
+      .script__img3 {
+        width: 20vw;
+        height: 35vh;
+        overflow: hidden;
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+        }
+      }
+      .script__img4 {
+        width: 20vw;
+        height: 35vh;
+        overflow: hidden;
+        background-color: #3a2a2a;
+        img {
+          overflow: hidden;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .script__section__study {
+    width: 85vh;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    a {
+      position: absolute;
+      text-align: right;
+      font-family: "Caveat";
+      font-size: 10vh;
+      transform: rotate(-7deg);
+      text-transform: uppercase;
+      top: 38%;
+      left: 35%;
+      &:hover {
+        transform: scale(110%);
+      }
+    }
+  }
+}
+//반응형
+@media (max-height: 750px) {
+  #section4 {
+    width: 1700px;
+    .deco__wst3 {
+      left: -145%;
+    }
+    .react__desc__e {
+      width: 160px !important;
+    }
+  }
+}
+@media (max-height: 650px) {
+  #section4 {
+    width: 1500px;
+    .deco__wst3 {
+      left: -163%;
+    }
+    .react__desc__e {
+      width: 250px !important;
+    }
+  }
+}

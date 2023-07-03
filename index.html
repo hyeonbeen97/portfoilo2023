@@ -187,7 +187,7 @@
             있습니다. 감사합니다!
           </div>
           <a
-            class="circle3"
+            class="circle4"
             href="http://hblog.dothome.co.kr/php2/main/main.php"
             target="_blank"
             >VIEW</a
@@ -201,6 +201,75 @@
             dynamic and flexible functionality, allowing the server to handle
             data processing and business logic. Thank you!
           </div>
+        </div>
+      </section>
+      <section id="section5" class="parallax__item">
+        <div class="script__start">
+          <p>SCRIPT</p>
+        </div>
+        <div class="script__box">
+          <div class="script__section">
+            <h4>Mouse<br /><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에
+              조명이 밝혀 지는 효과, 또는 이미지가 3D로 움직이는 효과를
+              주었습니다. 그리고 특정 텍스트에 마우스를 오버했을 때 이미지가
+              나타나는 효과와 글씨가 불빛이 들어오는 효과, 마우스를 따라다니는
+              도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img1">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg" />
+            </div>
+          </div>
+          <div class="script__section">
+            <h4>Slider<br /><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에
+              조명이 밝혀 지는 효과, 또는 이미지가 3D로 움직이는 효과를
+              주었습니다. 그리고 특정 텍스트에 마우스를 오버했을 때 이미지가
+              나타나는 효과와 글씨가 불빛이 들어오는 효과, 마우스를 따라다니는
+              도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img2">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg" />
+            </div>
+          </div>
+          <div class="script__section">
+            <h4>Pallax<br /><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에
+              조명이 밝혀 지는 효과, 또는 이미지가 3D로 움직이는 효과를
+              주었습니다. 그리고 특정 텍스트에 마우스를 오버했을 때 이미지가
+              나타나는 효과와 글씨가 불빛이 들어오는 효과, 마우스를 따라다니는
+              도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img3">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg" />
+            </div>
+          </div>
+          <div class="script__section">
+            <h4>Quiz<br /><em>Effect</em></h4>
+            <div class="script__desc">
+              마우스 좌표값에 따라서 이미지가 움직이는 듯한 효과와 이미지에
+              조명이 밝혀 지는 효과, 또는 이미지가 3D로 움직이는 효과를
+              주었습니다. 그리고 특정 텍스트에 마우스를 오버했을 때 이미지가
+              나타나는 효과와 글씨가 불빛이 들어오는 효과, 마우스를 따라다니는
+              도형이 바뀌는 효과를 주었습니다.
+            </div>
+            <a href="#">SITE VIEW</a>
+            <div class="script__img4">
+              <img src="./src/assets/images/site02.png" alt="mousegameimg" />
+            </div>
+          </div>
+        </div>
+        <div class="script__section__study">
+          <img src="./src/assets/images/study.png" alt="study" />
+          <a href="https://hyeonbeen97.github.io/web2023/" target="_blank">
+            script<br />study<br />view
+          </a>
         </div>
       </section>
     </main>
@@ -253,6 +322,16 @@
           gsap.set(".deco__wst", { rotation: -90 });
           gsap.set(".deco__wst2", { rotation: -90 });
           gsap.set(".deco__wst3", { rotation: -90 });
+          gsap.set(".wst__desc", { autoAlpha: 0 });
+          gsap.set(".wst__desc__e", { autoAlpha: 0 });
+          gsap.set(".react__desc", { autoAlpha: 0 });
+          gsap.set(".react__desc__e", { autoAlpha: 0 });
+          gsap.set(".php__desc", { autoAlpha: 0 });
+          gsap.set(".php__desc__e", { autoAlpha: 0 });
+          gsap.set(".script__img1 img", { scale: 2 });
+          gsap.set(".script__img2 img", { scale: 2 });
+          gsap.set(".script__img3 img", { scale: 2 });
+          gsap.set(".script__img4 img", { scale: 2 });
         }, 10);
 
         setTimeout(() => {
@@ -537,6 +616,132 @@
             end: "right left",
             scrub: 3,
             markers: false,
+          },
+        });
+        //r글씨 나타나기
+        gsap.to(".wst__desc", {
+          duration: 1,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: ".wst__text__wrap",
+            containerAnimation: scrollTween,
+            start: "left 50%",
+            end: "right 80%",
+          },
+        });
+        gsap.to(".wst__desc__e", {
+          duration: 2,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: ".wst__text__wrap",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right 80%  ",
+            markers: false,
+          },
+        });
+        gsap.to(".react__desc", {
+          duration: 3,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: ".react__text__wrap",
+            containerAnimation: scrollTween,
+            start: "left 50%",
+            end: "right 80%",
+            markers: false,
+          },
+        });
+        gsap.to(".react__desc__e", {
+          duration: 3,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: ".react__text__wrap",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right 80%",
+            markers: false,
+          },
+        });
+        gsap.to(".php__desc", {
+          duration: 3,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: ".php__text__wrap",
+            containerAnimation: scrollTween,
+            start: "left 60%",
+            end: "right 80%",
+            markers: false,
+          },
+        });
+        gsap.to(".php__desc__e", {
+          duration: 3,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: ".php__text__wrap",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right 80%",
+            markers: false,
+          },
+        });
+        ///스크립트 섹션 이미지
+        gsap.to(".script__img1 img", {
+          duration: 2,
+          scale: 1,
+          ease: "power2.out",
+          backgroundColor: "black(255, 0, 0, 0.5)",
+          scrollTrigger: {
+            trigger: ".script__img1",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right left",
+            markers: true,
+          },
+        });
+        gsap.to(".script__section", {
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".script__img1",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right left",
+            markers: true,
+          },
+        });
+        gsap.to(".script__img2 img", {
+          duration: 1,
+          scale: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".script__img2",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right left",
+            markers: true,
+          },
+        });
+        gsap.to(".script__img3 img", {
+          duration: 1,
+          scale: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".script__img3",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right left",
+            markers: true,
+          },
+        });
+        gsap.to(".script__img4 img", {
+          duration: 1,
+          scale: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".script__img4",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right left",
+            markers: true,
           },
         });
       }); //전체 박스
