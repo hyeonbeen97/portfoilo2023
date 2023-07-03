@@ -127,10 +127,7 @@
         </div>
         <div class="react__wrap">
           <div class="react__img">
-            <img src="./src/assets/images/web_st01.jpg" alt="webstandard" />
-          </div>
-          <div class="deco__box">
-            <div class="deco__boxbg"></div>
+            <img src="./src/assets/images/web_st01.jpg" alt="reactsite" />
           </div>
         </div>
         <div class="react__text__wrap">
@@ -162,6 +159,47 @@
             addition, this site that utilizes API using React Provides dynamic,
             real-time updated content with users The ability to manage data
             through interaction has been implemented.
+          </div>
+        </div>
+      </section>
+      <section id="section4" class="parallax__item">
+        <div class="deco__wst3">
+          PHP&nbsp;site &nbsp;PHP&nbsp;site &nbsp;PHP&nbsp;site
+          &nbsp;PHP&nbsp;site&nbsp;PHP&nbsp;site&nbsp;PHP&nbsp;site
+        </div>
+        <div class="php__wrap">
+          <div class="php__img">
+            <img src="./src/assets/images/phpsite.jpg" alt="webstandard" />
+          </div>
+          <div class="deco__box">
+            <div class="deco__boxbg"></div>
+          </div>
+        </div>
+        <div class="php__text__wrap">
+          <h3>PHP site</h3>
+          <div class="php__desc">
+            PHP를 사용하여 제작된 이 웹사이트는 서버 사이드에서 데이터를
+            처리하고 동적으로 컨텐츠를 생성하여 사용자에게 제공합니다.
+            데이터베이스와의 상호작용, 폼 처리, 세션 관리 등의 기능을
+            구현하였으며, PHP의 다양한 기능과 라이브러리를 활용하여 웹 개발을
+            수행하였습니다. PHP를 통해 제작된 이 웹사이트는 동적이고 유연한
+            기능을 제공하며, 서버 측에서 데이터 처리와 비즈니스 로직을 처리할 수
+            있습니다. 감사합니다!
+          </div>
+          <a
+            class="circle3"
+            href="http://hblog.dothome.co.kr/php2/main/main.php"
+            target="_blank"
+            >VIEW</a
+          >
+          <div class="php__desc__e">
+            Created using PHP, the website processes data on the server side and
+            dynamically generates content to provide it to users. We implemented
+            functions such as database interaction, form processing, and session
+            management, and performed web development using various functions
+            and libraries of PHP. Produced through PHP, the website offers
+            dynamic and flexible functionality, allowing the server to handle
+            data processing and business logic. Thank you!
           </div>
         </div>
       </section>
@@ -211,6 +249,11 @@
         gsap.set(".text-wrap .t1", { autoAlpha: 0, y: 30 });
         gsap.set(".text-wrap .t2", { autoAlpha: 0, y: 30 });
         gsap.set(".text-wrap .t3", { autoAlpha: 0, y: 30 });
+        setTimeout(() => {
+          gsap.set(".deco__wst", { rotation: -90 });
+          gsap.set(".deco__wst2", { rotation: -90 });
+          gsap.set(".deco__wst3", { rotation: -90 });
+        }, 10);
 
         setTimeout(() => {
           let tl = gsap.timeline();
@@ -263,20 +306,7 @@
             y: 0,
             ease: Power1.out,
           });
-          // tl.set("#section1 .about", { autoAlpha: 1 });
-          // tl.from("#section1 .about", {
-          //   duration: 1.5,
-          //   xPercent: -100,
-          //   ease: "Power2.out",
-          // });
-          // tl.from("#section1 .about img", {
-          //   duration: 0.1,
-          //   xPercent: 100,
-          //   scale: 1.3,
-          //   delay: -1.5,
-          // });
           //섹션 2----------
-          gsap.set(".deco__wst", { rotation: -90 });
         }, 2000);
 
         // 섹션1 큰 글씨
@@ -348,9 +378,11 @@
           scrollTrigger: {
             containerAnimation: scrollTween,
             trigger: ".wst__img",
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+
             start: "top 40%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
             end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
-            markers: true,
+            markers: false,
           },
         });
 
@@ -365,6 +397,8 @@
             start: "top 40%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
             end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
             delay: -1.5, // 애니메이션 시작 전 대기 시간
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+
             markers: false,
           },
         });
@@ -378,9 +412,11 @@
           scrollTrigger: {
             containerAnimation: scrollTween,
             trigger: ".wst__img__mini",
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+
             start: "top 40%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
             end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
-            markers: true,
+            markers: false,
           },
         });
 
@@ -395,10 +431,77 @@
             start: "top 40%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
             end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
             delay: -1.5, // 애니메이션 시작 전 대기 시간
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+
+            markers: false,
+          },
+        });
+        //사진 33------------------------------
+        gsap.set(".react__img", { autoAlpha: 1 });
+
+        gsap.from(".react__img", {
+          duration: 1.5,
+          xPercent: -100,
+          ease: "power2.out",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: ".react__img",
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+            start: "top 20%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
             markers: false,
           },
         });
 
+        gsap.from(".react__img img", {
+          duration: 1.5,
+          xPercent: 100,
+          scale: 1.3,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".react__img",
+            containerAnimation: scrollTween,
+            start: "top 20%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
+            delay: -1.5, // 애니메이션 시작 전 대기 시간
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+            markers: false,
+          },
+        });
+        //////php-----------------------------------------
+        gsap.set(".php__img", { autoAlpha: 1 });
+
+        gsap.from(".php__img", {
+          duration: 1.5,
+          xPercent: -100,
+          ease: "power2.out",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+
+            trigger: ".php__wrap",
+            start: "top 80%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+            markers: false,
+          },
+        });
+
+        gsap.from(".php__img img", {
+          duration: 1.5,
+          xPercent: 100,
+          scale: 1.3,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".php__wrap",
+            containerAnimation: scrollTween,
+
+            start: "top 80%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
+            scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
+            delay: -1.5, // 애니메이션 시작 전 대기 시간
+            markers: false,
+          },
+        });
         //-------내려오는 글씨-----섹션 22222222222
         gsap.to(".deco__wst", {
           duration: 3,
@@ -412,7 +515,31 @@
             markers: false,
           },
         });
-      });
+        gsap.to(".deco__wst2", {
+          duration: 3,
+          y: 1000,
+          scrollTrigger: {
+            trigger: ".deco__wst2",
+            containerAnimation: scrollTween,
+            start: "left right",
+            end: "right left",
+            scrub: 3,
+            markers: false,
+          },
+        });
+        gsap.to(".deco__wst3", {
+          duration: 3,
+          y: 1000,
+          scrollTrigger: {
+            trigger: ".deco__wst3",
+            containerAnimation: scrollTween,
+            start: "left right",
+            end: "right left",
+            scrub: 3,
+            markers: false,
+          },
+        });
+      }); //전체 박스
     </script>
   </body>
 </html>
