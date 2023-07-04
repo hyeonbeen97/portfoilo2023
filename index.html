@@ -272,6 +272,48 @@
           </a>
         </div>
       </section>
+      <section id="section6" class="parallax__item">
+        <div class="text-wrap2">
+          <div class="t1">Thank <em class="t1-1">you</em></div>
+          <div class="t2">for</div>
+          <div class="t3">looking at</div>
+          <div class="t4">my portfolio.</div>
+        </div>
+      </section>
+      <section id="section7" class="parallax__item">
+        <div class="contact__start">CONTACT</div>
+        <div class="contact__wrap">
+          <div class="ti2 split"><em>contact</em> me</div>
+          <div class="contact__info">
+            <div class="info">
+              <div class="name">Name : Kim Hyeon Been</div>
+              <div class="birth">Birth : 1997.05.24</div>
+              <div class="tel">
+                <a href="tel:010-7676-5702">Tel : 010 7676 5702</a>
+              </div>
+              <div class="mail">
+                <a href="mailto:esansi@naver.com">Email : esansi@naver.com</a>
+              </div>
+              <div class="icon__link">
+                <div>
+                  <a class="github" href="https://github.com/hyeonbeen97"
+                    >github</a
+                  >
+                </div>
+                <div>
+                  <a class="inst" href="#">instagram</a>
+                </div>
+                <div>
+                  <a class="blog" href="https://webeen.tistory.com/">blog</a>
+                </div>
+              </div>
+            </div>
+            <div class="img__2">
+              <img src="./src/assets/images/hyeonbeen.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script type="module" src="/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
@@ -280,6 +322,9 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
     <script>
+      window.addEventListener("resize", function () {
+        location.reload();
+      });
       document.addEventListener("DOMContentLoaded", function () {
         // 스무스 효과
         const lenis = new Lenis();
@@ -402,18 +447,70 @@
           },
         });
 
-        gsap.to(".text-wrap .t3", {
+        //마지막 큰 글씨
+        gsap.to(".text-wrap2 .t1", {
           duration: 1,
-          x: -300,
+          x: 600,
           scrollTrigger: {
-            trigger: ".text-wrap",
+            trigger: ".text-wrap2",
             containerAnimation: scrollTween,
-            start: "left right",
+            start: "left 30%",
             end: "right left",
             scrub: 1,
             markers: false,
           },
         });
+        gsap.to(".text-wrap2 .t2", {
+          duration: 1,
+          x: -400,
+          y: 100,
+          scrollTrigger: {
+            trigger: ".text-wrap2",
+            containerAnimation: scrollTween,
+            start: "left 30%",
+            end: "right left",
+            scrub: 1,
+            markers: false,
+          },
+        });
+        gsap.to(".text-wrap2 .t3", {
+          duration: 1,
+          x: 400,
+          y: -100,
+          scrollTrigger: {
+            trigger: ".text-wrap2",
+            containerAnimation: scrollTween,
+            start: "left 30%",
+            end: "right right",
+            scrub: 2,
+            markers: false,
+          },
+        });
+        gsap.to(".text-wrap2 .t4", {
+          duration: 1,
+          x: 300,
+          scrollTrigger: {
+            trigger: ".text-wrap2",
+            containerAnimation: scrollTween,
+            start: "left 30%",
+            end: "right left",
+            scrub: 4,
+            markers: false,
+          },
+        });
+
+        // gsap.to(".text-wrap2 .t3", {
+        //   duration: 1,
+        //   x: 300,
+        //   scrollTrigger: {
+        //     trigger: ".text-wrap2",
+        //     containerAnimation: scrollTween,
+        //     start: "left right",
+        //     end: "right left",
+        //     scrub: 1,
+        //     markers: false,
+        //   },
+        // });
 
         //---------사진 왼쪽에서 오른쪽으로 나오게 하기
         gsap.set(".about", { autoAlpha: 1 });
@@ -526,7 +623,7 @@
             containerAnimation: scrollTween,
             trigger: ".react__img",
             scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
-            start: "top 20%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
+            start: "top 10%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
             end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
             markers: false,
           },
@@ -540,7 +637,7 @@
           scrollTrigger: {
             trigger: ".react__img",
             containerAnimation: scrollTween,
-            start: "top 20%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
+            start: "top 10%", // 섹션 상단이 뷰포트의 80%에 도달했을 때 애니메이션 시작
             end: "bottom 20%", // 섹션 하단이 뷰포트의 20%에 도달했을 때 애니메이션 완료
             delay: -1.5, // 애니메이션 시작 전 대기 시간
             scrub: 0.5, // 스크롤 속도에 따라 애니메이션 속도 조절
@@ -686,9 +783,9 @@
         });
         ///스크립트 섹션 이미지
         gsap.to(".script__img1 img", {
-          duration: 2,
+          duration: 0.5,
           scale: 1,
-          ease: "power2.out",
+          ease: "bounce({strength:0.5, endAtStart:true})",
           backgroundColor: "black(255, 0, 0, 0.5)",
           scrollTrigger: {
             trigger: ".script__img1",
@@ -709,9 +806,9 @@
           },
         });
         gsap.to(".script__img2 img", {
-          duration: 1,
+          duration: 0.5,
           scale: 1,
-          ease: "power2.out",
+          ease: "bounce({strength:0.5, endAtStart:true})",
           scrollTrigger: {
             trigger: ".script__img2",
             containerAnimation: scrollTween,
@@ -721,9 +818,9 @@
           },
         });
         gsap.to(".script__img3 img", {
-          duration: 1,
+          duration: 0.5,
           scale: 1,
-          ease: "power2.out",
+          ease: "bounce({strength:0.5, endAtStart:true})",
           scrollTrigger: {
             trigger: ".script__img3",
             containerAnimation: scrollTween,
@@ -733,9 +830,9 @@
           },
         });
         gsap.to(".script__img4 img", {
-          duration: 1,
+          duration: 0.5,
           scale: 1,
-          ease: "power2.out",
+          ease: "bounce({strength:0.5, endAtStart:true})",
           scrollTrigger: {
             trigger: ".script__img4",
             containerAnimation: scrollTween,
@@ -744,7 +841,50 @@
             markers: true,
           },
         });
+        //contact
+
+        //글씨 분리하기
+        document.querySelectorAll(".split").forEach((desc) => {
+          let splitText = desc.innerText;
+          let spitWrap = splitText
+            .split("")
+            .join("</span><span aria-hidden='true'>");
+          spitWrap = "<span aria-hidden='true'>" + spitWrap + "</span>";
+          desc.innerHTML = spitWrap;
+          desc.setAttribute("aria-label", splitText);
+          console.log(spitWrap);
+        });
+        gsap.set(".ti2 span", {
+          opacity: 0,
+          scale: 10,
+          rotationY: "+=360",
+          x: 500,
+          display: "inline-block",
+          minWidth: "1.4vw",
+        });
+
+        gsap.to(".contact__wrap .ti2 span", {
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          rotationY: "0",
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "bounce({strength:0.5, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".contact__wrap",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right left",
+            markers: true,
+          },
+        });
       }); //전체 박스
+    </script>
+    <script>
+      /*
+       * Main variables
+       */
     </script>
   </body>
 </html>

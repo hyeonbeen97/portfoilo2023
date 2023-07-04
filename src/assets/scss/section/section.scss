@@ -3,7 +3,7 @@ body {
 }
 #parallax__cont {
   overscroll-behavior: none;
-  width: 17700px;
+  width: 19000px;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
@@ -176,6 +176,16 @@ body {
     #section1 .about-text .add2 {
       display: none;
     }
+  }
+}
+@media (max-height: 750px) {
+  #parallax__cont {
+    width: 16300px;
+  }
+}
+@media (max-height: 650px) {
+  #parallax__cont {
+    width: 14300px;
   }
 }
 

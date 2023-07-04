@@ -183,24 +183,22 @@
 }
 //반응형
 @media (max-height: 750px) {
-  #section4 {
-    width: 1700px;
-    .deco__wst3 {
-      left: -145%;
-    }
-    .react__desc__e {
-      width: 160px !important;
+  #section5 {
+    width: 2100px;
+    margin-left: 20vh;
+    .script__box {
+      .script__section {
+      }
     }
   }
 }
 @media (max-height: 650px) {
-  #section4 {
-    width: 1500px;
-    .deco__wst3 {
-      left: -163%;
-    }
-    .react__desc__e {
-      width: 250px !important;
+  #section5 {
+    width: 2100px;
+    margin-left: 25vh;
+    .script__box {
+      .script__section {
+      }
     }
   }
 }

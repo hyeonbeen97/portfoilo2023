@@ -1,0 +1,41 @@
+#section6 {
+  width: 3000px;
+  display: flex;
+  background-color: #000000;
+  .text-wrap2 {
+    margin-left: 20vh;
+  }
+
+  .text-wrap2 > div {
+    color: #ffffff;
+    font-size: 35.5vh;
+    font-family: "Cormorant Garamond";
+    line-height: 0.7;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+  }
+
+  .text-wrap2 > div:nth-child(2) {
+  }
+
+  .text-wrap2 > div:nth-child(3) {
+  }
+}
+//반응형
+@media (max-height: 750px) {
+  #section4 {
+    width: 1700px;
+  }
+}
+@media (max-height: 650px) {
+  #section4 {
+    width: 1500px;
+    .deco__wst3 {
+      left: -163%;
+    }
+    .react__desc__e {
+      width: 250px !important;
+    }
+  }
+}
