@@ -48,15 +48,15 @@
           <img src="./src/assets/images/hyeonbeen3.png" alt="메인 이미지" />
         </div>
         <div class="about-text">
-          안녕하세요. 프론트엔드를 꿈꾸는 김현빈 입니다.<br />
-          저의 포트폴리오에 오신것을 환영합니다. 디자인에 관심이 생겨
-          웹반응형UI/UX 웹 퍼블리셔과정을 배우게 되었는데 웹페이지에서 동적인
-          것을 구현할 수 있는 프론트엔드 개발에 점차 흥미를 느끼게 됐습니다.
-          새로운 기술들이 끊임없이 나오는 프론트엔드에서 최신트렌드에뒤쳐지지
-          않기 위해 검색을 통해 동향을 파악하고 각각의 기술들의 장단점을
-          확실하게 알고 원하는 기능이필요할 때 바로 배우고 적용할 수 있는
-          개발자가 되겠습니다. 공들여 만든 프로젝트와 제 노력의 결과물을 보실 수
-          있습니다. 편안하게 보시며 즐겨주세요. 감사합니다.
+          안녕하세요. 프론트엔드를 꿈꾸는 김현빈 입니다. 저의 포트폴리오에
+          오신것을 환영합니다. 디자인에 관심이 생겨 웹반응형UI/UX 웹
+          퍼블리셔과정을 배우게 되었는데 웹페이지에서 동적인 것을 구현할 수 있는
+          프론트엔드 개발에 점차 흥미를 느끼게 됐습니다. 새로운 기술들이
+          끊임없이 나오는 프론트엔드에서 최신트렌드에뒤쳐지지 않기 위해 검색을
+          통해 동향을 파악하고 각각의 기술들의 장단점을 확실하게 알고 원하는
+          기능이필요할 때 바로 배우고 적용할 수 있는 개발자가 되겠습니다. 공들여
+          만든 프로젝트와 제 노력의 결과물을 보실 수 있습니다. 편안하게 보시며
+          즐겨주세요. 감사합니다.
           <div class="add1">
             We are composed of a curated selection of distinct furniture and
             accessories for home and garden, carefully chosen for their beauty,
@@ -160,6 +160,7 @@
             real-time updated content with users The ability to manage data
             through interaction has been implemented.
           </div>
+          <div class="react__desc__e2"></div>
         </div>
       </section>
       <section id="section4" class="parallax__item">
@@ -195,11 +196,13 @@
           <div class="php__desc__e">
             Created using PHP, the website processes data on the server side and
             dynamically generates content to provide it to users. We implemented
-            functions such as database interaction, form processing, and session
-            management, and performed web development using various functions
-            and libraries of PHP. Produced through PHP, the website offers
-            dynamic and flexible functionality, allowing the server to handle
-            data processing and business logic. Thank you!
+            functions such as database interaction, form processing,
+          </div>
+          <div class="php__desc__e2">
+            And session management, and performed web development using various
+            functions and libraries of PHP. Produced through PHP, the website
+            offers dynamic and flexible functionality, allowing the server to
+            handle data processing and business logic. Thank you!
           </div>
         </div>
       </section>
@@ -322,9 +325,6 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
     <script>
-      window.addEventListener("resize", function () {
-        location.reload();
-      });
       document.addEventListener("DOMContentLoaded", function () {
         // 스무스 효과
         const lenis = new Lenis();
@@ -792,7 +792,7 @@
             containerAnimation: scrollTween,
             start: "left 40%",
             end: "right left",
-            markers: true,
+            markers: false,
           },
         });
         gsap.to(".script__section", {
@@ -802,7 +802,7 @@
             containerAnimation: scrollTween,
             start: "left 40%",
             end: "right left",
-            markers: true,
+            markers: false,
           },
         });
         gsap.to(".script__img2 img", {
@@ -814,7 +814,7 @@
             containerAnimation: scrollTween,
             start: "left 40%",
             end: "right left",
-            markers: true,
+            markers: false,
           },
         });
         gsap.to(".script__img3 img", {
@@ -826,7 +826,7 @@
             containerAnimation: scrollTween,
             start: "left 40%",
             end: "right left",
-            markers: true,
+            markers: false,
           },
         });
         gsap.to(".script__img4 img", {
@@ -838,7 +838,7 @@
             containerAnimation: scrollTween,
             start: "left 40%",
             end: "right left",
-            markers: true,
+            markers: false,
           },
         });
         //contact
@@ -876,7 +876,7 @@
             containerAnimation: scrollTween,
             start: "left 40%",
             end: "right left",
-            markers: true,
+            markers: false,
           },
         });
       }); //전체 박스

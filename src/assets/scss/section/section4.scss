@@ -1,15 +1,15 @@
 #section4 {
-  width: 2100px;
   display: flex;
+  flex-wrap: nowrap;
 
   .deco__wst3 {
-    width: 5000px;
+    width: 600vh;
     // border-bottom: 2px solid #000;
     border-top: 2px solid #000;
     // text-decoration: line-through;
     display: inline-block;
     position: absolute;
-    left: -118%;
+    left: -270vh;
     top: 0;
     text-transform: uppercase;
     font-family: "Cormorant Garamond";
@@ -20,9 +20,9 @@
     display: flex;
     position: relative;
     padding: 10vh 0;
-    margin-left: 20vw;
+    margin-left: 55vh;
     .php__img {
-      width: 30vw;
+      width: 60vh;
       height: 80vh;
       visibility: hidden;
       overflow: hidden;
@@ -39,31 +39,39 @@
     }
   }
   .php__text__wrap {
-    width: 67vh;
+    width: 50vh;
     position: relative;
     padding: 10vh 0;
     margin-left: 15vh;
     h3 {
-      width: 63vh;
+      width: 50vh;
 
       text-align: right;
       font-family: jura;
       font-size: 5vh;
-      margin-bottom: 10%;
+      margin-bottom: 10vh;
     }
     .php__desc {
       word-break: break-all;
       text-align: right;
-      width: 63vh;
+      width: 50vh;
       color: #616161;
       font-weight: 100;
       font-size: 1.6vh;
-      margin-bottom: 18%;
+      margin-bottom: 18vh;
     }
     .php__desc__e {
       word-break: break-all;
-      text-align: right;
-      width: 63vh;
+      text-align: left;
+      width: 33vh;
+      color: #a3ddad;
+      font-weight: 100;
+      font-size: 1.5vh;
+    }
+    .php__desc__e2 {
+      word-break: break-all;
+      text-align: left;
+      width: 33vh;
       color: #a3ddad;
       font-weight: 100;
       font-size: 1.5vh;
@@ -80,8 +88,8 @@
       color: #fff;
       font-size: 30px;
       font-family: "Cormorant Garamond";
-      left: -13vw;
-      top: 50%;
+      left: -27vh;
+      top: 40vh;
       transition: all 0.5s;
       &:hover {
         transform: rotate(360deg);
@@ -92,23 +100,19 @@
 //반응형
 @media (max-height: 750px) {
   #section4 {
-    width: 1500px !important;
-    .deco__wst3 {
-      left: -165% !important;
-    }
-    .react__desc__e {
-      width: 160px !important;
+    .circle4 {
+      width: 150px !important;
+      height: 150px !important;
+      line-height: 150px !important;
     }
   }
 }
 @media (max-height: 650px) {
   #section4 {
-    width: 1300px !important;
-    .deco__wst3 {
-      left: -195% !important;
-    }
-    .react__desc__e {
-      width: 250px !important;
+    .circle4 {
+      width: 120px !important;
+      height: 120px !important;
+      line-height: 120px !important;
     }
   }
 }

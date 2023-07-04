@@ -1,16 +1,16 @@
 #section3 {
-  width: 2100px;
   display: flex;
+  flex-wrap: nowrap;
 
   .deco__wst2 {
-    width: 3600px;
+    width: 450vh;
     // border-bottom: 2px solid #000;
     border-top: 2px solid #000;
     // text-decoration: line-through;
     display: inline-block;
     position: absolute;
     top: 0;
-    left: -78.5%;
+    left: -175vh;
     text-transform: uppercase;
     font-family: "Cormorant Garamond";
     font-size: 20vh;
@@ -20,9 +20,10 @@
     display: flex;
     position: relative;
     padding: 10vh 0;
+    margin-left: 20vh;
     padding-left: 40vh;
     .react__img {
-      width: 1000px;
+      width: 100vh;
       height: 80vh;
       visibility: hidden;
       overflow: hidden;
@@ -41,7 +42,7 @@
   .react__text__wrap {
     position: relative;
     padding: 20vh 0;
-    margin-left: 5vh;
+    margin-left: 15vh;
     h3 {
       text-align: left;
       width: 45vh;
@@ -79,8 +80,8 @@
       color: #fff;
       font-size: 30px;
       font-family: "Cormorant Garamond";
-      left: -8vw;
-      top: 60%;
+      left: -28vh;
+      top: 55vh;
       transition: all 0.5s;
       &:hover {
         transform: rotate(360deg);
@@ -88,26 +89,22 @@
     }
   }
 }
-//반응형
+// //반응형
 @media (max-height: 750px) {
   #section3 {
-    width: 1900px;
-    .deco__wst2 {
-      left: -93%;
-    }
-    .react__desc__e {
-      width: 160px !important;
+    .circle3 {
+      width: 150px !important;
+      height: 150px !important;
+      line-height: 150px !important;
     }
   }
 }
 @media (max-height: 650px) {
   #section3 {
-    width: 1700px;
-    .deco__wst2 {
-      left: -105%;
-    }
-    .react__desc__e {
-      width: 250px !important;
+    .circle3 {
+      width: 120px !important;
+      height: 120px !important;
+      line-height: 120px !important;
     }
   }
 }

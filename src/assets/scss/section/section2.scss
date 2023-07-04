@@ -1,14 +1,14 @@
 #section2 {
-  width: 2100px;
+  flex-wrap: nowrap;
   position: relative;
   .deco__wst {
-    width: 4300px;
+    width: 500vh;
     position: absolute;
     // border-bottom: 2px solid #000;
     border-top: 2px solid #000;
     // text-decoration: line-through;
     display: inline-block;
-    left: -95%;
+    left: -225vh;
     top: 0;
     text-transform: uppercase;
     font-family: "Cormorant Garamond";
@@ -19,10 +19,10 @@
     display: flex;
     position: relative;
     padding: 10vh 0;
-    margin-left: 20vh;
+    margin-left: 30vh;
 
     .wst__img {
-      width: 700px;
+      width: 70vh;
       height: 80vh;
       overflow: hidden;
       visibility: hidden;
@@ -37,10 +37,10 @@
       transform-origin: left;
     }
     .wst__img__mini {
-      width: 330px;
+      width: 33vh;
       height: 25vh;
-      top: 15%;
-      left: 27vw;
+      top: 15vh;
+      left: 60vh;
       visibility: hidden;
       position: absolute;
       overflow: hidden;
@@ -70,8 +70,8 @@
       color: #fff;
       font-size: 30px;
       font-family: "Cormorant Garamond";
-      left: 39vw;
-      top: 30%;
+      left: 80vh;
+      top: 30vh;
       transition: all 0.5s;
       &:hover {
         transform: rotate(360deg);
@@ -79,19 +79,20 @@
     }
     .wst__text__wrap {
       word-break: keep-all;
-      width: 30vw;
+      width: 70vh;
+      // background-color: #c41e1e;
       margin-left: 40vh;
       h3 {
         font-family: jura;
         font-size: 5vh;
-        margin-bottom: 5%;
+        margin-bottom: 5vh;
       }
       .wst__desc {
         color: #555;
         display: inline-block;
         font-size: 1.8vh;
         line-height: 1.5;
-        margin-bottom: 18%;
+        margin-bottom: 18vh;
       }
       .wst__desc__e {
         text-align: right;
@@ -103,39 +104,22 @@
   }
 }
 //반응형
-@media (max-height: 750px) {
-  #section2 {
-    width: 1900px;
-    .wst__wrap {
-      margin-left: 30vh;
-    }
-    .deco__wst {
-      left: -110%;
-    }
-    .wst__img__mini {
-      height: 250px !important;
-      left: 30% !important;
-    }
+@media (max-height: 700px) {
+  .wst__wrap {
     .circle2 {
-      left: 45% !important;
+      width: 150px !important;
+      height: 150px !important;
+      line-height: 150px !important;
     }
   }
-}
-@media (max-height: 650px) {
-  #section2 {
-    width: 1700px;
-    .deco__wst {
-      left: -136%;
-    }
-    .wst__img__mini {
-      height: 250px !important;
-      left: 30% !important;
-    }
-    .circle2 {
-      top: 40% !important;
-      left: 45% !important;
-    }
-  }
-}
 
-//section1
+  @media (max-height: 600px) {
+    .wst__wrap {
+      .circle2 {
+        width: 120px !important;
+        height: 120px !important;
+        line-height: 120px !important;
+      }
+    }
+  }
+}

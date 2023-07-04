@@ -1,11 +1,12 @@
 #section5 {
-  width: 2800px;
   display: flex;
+  flex-wrap: nowrap;
 
   .script__start {
     line-height: 100vh;
-    width: 100px;
+    width: 10vh;
     height: 100vh;
+    margin-right: 5vh;
     p {
       cursor: pointer;
       transition: all 2s;
@@ -17,11 +18,11 @@
   .script__box {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    width: 100vw;
+    width: 200vh;
     display: flex;
     overflow: hidden;
     .script__section {
-      width: 25%;
+      width: 50vh;
       height: 100vh;
       padding: 5vh 5vh;
       border-right: 1px solid #000;
@@ -88,7 +89,7 @@
         font-weight: 500;
         font-family: "Cormorant Garamond";
         letter-spacing: 2vh;
-        margin-bottom: 3vh;
+        margin-bottom: 7vh;
         em {
           font-weight: lighter;
         }
@@ -108,7 +109,7 @@
         font-size: 1vh;
       }
       .script__img1 {
-        width: 20vw;
+        width: 40vh;
         height: 35vh;
         overflow: hidden;
         img {
@@ -120,7 +121,7 @@
         }
       }
       .script__img2 {
-        width: 20vw;
+        width: 40vh;
         height: 35vh;
         overflow: hidden;
         img {
@@ -132,7 +133,7 @@
         }
       }
       .script__img3 {
-        width: 20vw;
+        width: 40vh;
         height: 35vh;
         overflow: hidden;
         img {
@@ -144,7 +145,7 @@
         }
       }
       .script__img4 {
-        width: 20vw;
+        width: 40vh;
         height: 35vh;
         overflow: hidden;
         background-color: #3a2a2a;
@@ -184,7 +185,6 @@
 //반응형
 @media (max-height: 750px) {
   #section5 {
-    width: 2100px;
     margin-left: 20vh;
     .script__box {
       .script__section {
@@ -194,7 +194,6 @@
 }
 @media (max-height: 650px) {
   #section5 {
-    width: 2100px;
     margin-left: 25vh;
     .script__box {
       .script__section {

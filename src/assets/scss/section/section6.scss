@@ -24,18 +24,6 @@
 }
 //반응형
 @media (max-height: 750px) {
-  #section4 {
-    width: 1700px;
-  }
 }
 @media (max-height: 650px) {
-  #section4 {
-    width: 1500px;
-    .deco__wst3 {
-      left: -163%;
-    }
-    .react__desc__e {
-      width: 250px !important;
-    }
-  }
 }

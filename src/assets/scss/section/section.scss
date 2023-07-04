@@ -3,22 +3,21 @@ body {
 }
 #parallax__cont {
   overscroll-behavior: none;
-  width: 19000px;
+  width: 900%;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
 }
 
 #section1 {
-  width: 5100px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height: 100vh;
   position: relative;
 }
 
 #section1 .img {
-  width: 500px;
+  width: 50vh;
   height: 80vh;
   visibility: hidden;
   overflow: hidden;
@@ -39,8 +38,8 @@ body {
   background-color: #000;
   color: #fff;
   position: absolute;
-  left: 450px;
-  top: 70%;
+  left: 40vh;
+  top: 67vh;
   text-align: center;
   font-family: Jura;
   font-size: 20px;
@@ -49,7 +48,7 @@ body {
 
 #section1 .desc {
   color: #333;
-  width: 350px;
+  width: 35vh;
   font-family: "IropkeBatang";
   margin-left: 6vh;
   margin-top: 4vh;
@@ -59,7 +58,7 @@ body {
 #section1 .desc span {
   display: inline-block;
   text-align: right;
-  width: 100%;
+  width: 35vh;
   margin-top: 10px;
   color: #666;
 }
@@ -88,10 +87,10 @@ body {
 }
 
 #section1 .about {
-  width: 700px;
+  width: 70vh;
   height: 100vh;
   overflow: hidden;
-  margin-left: -1000px;
+  margin-left: -100vh;
   visibility: hidden;
 }
 
@@ -106,10 +105,11 @@ body {
 #section1 .about-text {
   color: #616161;
   width: 90vh;
+  margin-left: -5vh;
   font-family: "IropkeBatang";
   font-family: "ChosunNm";
-  font-size: 34px;
-  padding: 10px 80px;
+  font-size: 3.5vh;
+  padding: 1vh 0;
   white-space: pre;
   line-height: 1.5;
   margin-right: 50vh;
@@ -122,70 +122,44 @@ body {
 }
 
 #section1 .about-text .add1 {
-  width: 340px;
-  font-size: 14px;
+  width: 34vh;
+  font-size: 1.6vh;
   white-space: normal;
   line-height: 1.3;
   position: absolute;
-  left: 20vh;
-  bottom: 6vh;
+  margin-top: 5vh;
+  left: 10vh;
+  bottom: 20vh;
   text-align: justify;
   color: #858585;
 }
 
 #section1 .about-text .add2 {
-  width: 340px;
-  font-size: 14px;
+  width: 34vh;
+  font-size: 1.6vh;
   white-space: normal;
   line-height: 1.3;
   position: absolute;
-  left: 75vh;
-  bottom: 8vh;
+  margin-top: 5vh;
+  left: 50vh;
+  bottom: 23vh;
   text-align: justify;
   color: #858585;
 }
 //반응형
 @media (max-height: 750px) {
-  #section1 {
-    width: 4100px;
-  }
   #section1 .circle {
     width: 150px;
     height: 150px;
     line-height: 150px;
   }
-  #section1 .about-text {
-    width: 200px;
-    font-size: 20px;
-  }
 
   @media (max-height: 650px) {
-    #section1 {
-      width: 3650px;
-    }
     #section1 .circle {
       width: 150px;
       height: 150px;
       line-height: 150px;
     }
-    #section1 .about-text {
-      width: 200px;
-      font-size: 20px;
-    }
-    #section1 .about-text .add1,
-    #section1 .about-text .add2 {
-      display: none;
-    }
-  }
-}
-@media (max-height: 750px) {
-  #parallax__cont {
-    width: 16300px;
-  }
-}
-@media (max-height: 650px) {
-  #parallax__cont {
-    width: 14300px;
   }
 }
 
