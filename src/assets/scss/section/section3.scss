@@ -3,17 +3,14 @@
   flex-wrap: nowrap;
 
   .deco__wst2 {
-    width: 470vh;
-    // border-bottom: 2px solid #000;
-    border-top: 2px solid #000;
-    // text-decoration: line-through;
+    width: 520vh;
     display: inline-block;
     position: absolute;
     top: -100vh;
-    left: -200vh;
-    text-transform: uppercase;
+    left: -229vh;
+    // text-transform: uppercase;
     font-family: "Cormorant Garamond";
-    font-size: 20vh;
+    font-size: 25vh;
     font-weight: 100;
   }
   .react__wrap {
@@ -42,13 +39,13 @@
   }
   .react__text__wrap {
     position: relative;
-    padding: 20vh 0;
+    padding: 15vh 0;
     margin-left: 15vh;
     h3 {
       text-align: left;
       width: 45vh;
       font-family: jura;
-      font-size: 5vh;
+      font-size: 8vh;
       margin-bottom: 8%;
     }
     .react__desc {
@@ -58,7 +55,7 @@
       color: #616161;
       font-weight: 100;
       font-size: 1.6vh;
-      margin-bottom: 10vh;
+      margin-bottom: 5vh;
     }
     .react__desc__e {
       float: right;
@@ -72,20 +69,27 @@
     .circle3 {
       position: absolute;
       width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      // border: 2px solid #000;
-      background-color: #745b4b;
+      height: 50px;
       text-align: center;
-      line-height: 200px;
+      line-height: 50px;
       color: #fff;
       font-size: 3vh;
       font-family: "Cormorant Garamond";
-      left: -28vh;
-      top: 55vh;
-      transition: all 0.5s;
+      left: 20vh;
+      top: 82vh;
+      background-color: #fff;
+text-shadow: 1px 1px 0 #fff;
+        color: #61677c;
+          font-weight: bold;
+          box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          font-weight: 600;
       &:hover {
-        transform: rotate(360deg);
+        box-shadow: -2px -2px 5px #fff, 2px 2px 5px
+      }
+      &:active {
+        box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
       }
     }
   }
@@ -94,18 +98,23 @@
 @media (max-height: 700px) {
   #section3 {
     .circle3 {
+      left: 23vh !important;
       width: 150px !important;
-      height: 150px !important;
-      line-height: 150px !important;
+      height: 40px !important;
+      line-height: 40px !important;
     }
   }
 }
 @media (max-height: 600px) {
   #section3 {
     .circle3 {
-      width: 100px !important;
-      height: 100px !important;
-      line-height: 100px !important;
+            left: 18vh !important;
+              width: 150px !important;
+              height: 40px !important;
+              line-height: 40px !important;
     }
+        .react__desc__e {
+          display: none;
+        }
   }
 }

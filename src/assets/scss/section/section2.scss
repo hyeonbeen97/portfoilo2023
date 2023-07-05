@@ -6,14 +6,13 @@
     width: 500vh;
     position: absolute;
     // border-bottom: 2px solid #000;
-    border-top: 2px solid #000;
     // text-decoration: line-through;
     display: inline-block;
-    left: -225vh;
+    left: -232vh;
     top: 0;
-    text-transform: uppercase;
+    // text-transform:lowercase;
     font-family: "Cormorant Garamond";
-    font-size: 20vh;
+    font-size: 25vh;
     font-weight: 100;
   }
   .wst__wrap {
@@ -24,6 +23,7 @@
     margin-left: 30vh;
 
     .wst__img {
+      
       width: 70vh;
       height: 80vh;
       overflow: hidden;
@@ -31,6 +31,7 @@
     }
 
     .wst__img img {
+      
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -62,31 +63,40 @@
     }
     .circle2 {
       position: absolute;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      // border: 2px solid #000;
-      background-color: #23301b;
-      text-align: center;
-      line-height: 200px;
-      color: #fff;
-      font-size: 3vh;
-      font-family: "Cormorant Garamond";
-      left: 80vh;
-      top: 30vh;
-      transition: all 0.5s;
-      &:hover {
-        transform: rotate(360deg);
-      }
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 3vh;
+        font-family: "Cormorant Garamond";
+        left: 74vh;
+        top: 83vh;
+        background-color: #fff;
+        text-shadow: 1px 1px 0 #fff;
+        color: #61677c;
+        font-weight: bold;
+        box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+      
+        &:hover {
+          box-shadow: -2px -2px 5px #fff, 2px 2px 5px
+        }
+      
+        &:active {
+          box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+        }
     }
     .wst__text__wrap {
       word-break: keep-all;
-      width: 70vh;
+      width: 69vh;
       // background-color: #c41e1e;
       margin-left: 40vh;
       h3 {
         font-family: jura;
-        font-size: 5vh;
+        font-size: 8vh;
         margin-bottom: 5vh;
       }
       .wst__desc {
@@ -109,18 +119,22 @@
 @media (max-height: 700px) {
   .wst__wrap {
     .circle2 {
-      width: 150px !important;
-      height: 150px !important;
-      line-height: 150px !important;
+      top: 83.5vh !important;
+      left: 78vh !important;
+        width: 150px !important;
+        height: 40px !important;
+        line-height: 40px !important;
     }
   }
 
   @media (max-height: 600px) {
     .wst__wrap {
       .circle2 {
-        width: 120px !important;
-        height: 120px !important;
-        line-height: 120px !important;
+      top: 83vh !important;
+        left: 78vh !important;
+        width: 150px !important;
+        height: 40px !important;
+        line-height: 40px !important;
       }
     }
   }
