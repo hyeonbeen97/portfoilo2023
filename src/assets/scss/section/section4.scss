@@ -18,7 +18,7 @@
   }
   .php__wrap {
     display: flex;
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
     position: relative;
     padding: 10vh 0;
     margin-left: 55vh;
@@ -53,19 +53,19 @@
       margin-bottom: 10vh;
     }
     .php__desc {
-      word-break: break-all;
+      word-break: keep-all;
       text-align: right;
       width: 50vh;
       color: #616161;
       font-weight: 100;
       font-size: 1.6vh;
-      margin-bottom: 18vh;
+      margin-bottom: 10vh;
     }
     .php__desc__e {
       word-break: break-all;
       text-align: left;
       width: 33vh;
-      color: #a3ddad;
+      color: #8b9b8e;
       font-weight: 100;
       font-size: 1.5vh;
     }
@@ -73,7 +73,7 @@
       word-break: break-all;
       text-align: left;
       width: 33vh;
-      color: #a3ddad;
+      color: #8b9b8e;
       font-weight: 100;
       font-size: 1.5vh;
     }
@@ -87,7 +87,7 @@
       text-align: center;
       line-height: 200px;
       color: #fff;
-      font-size: 30px;
+      font-size: 3vh;
       font-family: "Cormorant Garamond";
       left: -27vh;
       top: 40vh;
@@ -99,7 +99,7 @@
   }
 }
 //반응형
-@media (max-height: 750px) {
+@media (max-height: 700px) {
   #section4 {
     .circle4 {
       width: 150px !important;
@@ -108,12 +108,12 @@
     }
   }
 }
-@media (max-height: 650px) {
+@media (max-height: 600px) {
   #section4 {
     .circle4 {
-      width: 120px !important;
-      height: 120px !important;
-      line-height: 120px !important;
+      width: 100px !important;
+      height: 100px !important;
+      line-height: 100px !important;
     }
   }
 }

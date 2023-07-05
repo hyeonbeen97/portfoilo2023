@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   background-color: #000000;
+  padding-right: 10vh;
   .contact__start {
     width: 20vh;
     text-align: right;
@@ -14,7 +15,6 @@
     border-left: 1px dotted #ffffff;
   }
   .contact__wrap {
-    width: 145vh;
     .ti2 {
       width: 145vh;
       height: 20vh;
@@ -145,4 +145,3 @@
     }
   }
 }
-

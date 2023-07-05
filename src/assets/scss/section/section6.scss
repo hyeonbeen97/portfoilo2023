@@ -1,6 +1,6 @@
 #section6 {
   flex-wrap: nowrap;
-    display: flex;
+  display: flex;
   background-color: #000000;
   .text-wrap2 {
     margin-left: 20vh;
@@ -23,7 +23,3 @@
   }
 }
 //반응형
-@media (max-height: 750px) {
-}
-@media (max-height: 650px) {
-}

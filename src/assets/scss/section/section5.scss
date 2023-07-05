@@ -6,9 +6,10 @@
     width: 30vh;
     line-height: 100vh;
     margin-right: 1vh;
+    padding-right: 2vh;
     p {
       cursor: pointer;
-    text-align: right;
+      text-align: right;
       transition: all 2s;
       &:hover {
         transform: rotateX(360deg);
@@ -20,7 +21,7 @@
     border-right: 1px solid #000;
     width: 200vh;
     display: flex;
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
     overflow: hidden;
     .script__section {
       width: 50vh;

@@ -58,13 +58,13 @@
       color: #616161;
       font-weight: 100;
       font-size: 1.6vh;
-      margin-bottom: 10%;
+      margin-bottom: 10vh;
     }
     .react__desc__e {
       float: right;
       word-break: break-all;
       text-align: right;
-      width: 30vh;
+      width: 45vh;
       color: #a5a381;
       font-weight: 100;
       font-size: 1.5vh;
@@ -79,7 +79,7 @@
       text-align: center;
       line-height: 200px;
       color: #fff;
-      font-size: 30px;
+      font-size: 3vh;
       font-family: "Cormorant Garamond";
       left: -28vh;
       top: 55vh;
@@ -91,7 +91,7 @@
   }
 }
 // //반응형
-@media (max-height: 750px) {
+@media (max-height: 700px) {
   #section3 {
     .circle3 {
       width: 150px !important;
@@ -100,12 +100,12 @@
     }
   }
 }
-@media (max-height: 650px) {
+@media (max-height: 600px) {
   #section3 {
     .circle3 {
-      width: 120px !important;
-      height: 120px !important;
-      line-height: 120px !important;
+      width: 100px !important;
+      height: 100px !important;
+      line-height: 100px !important;
     }
   }
 }
