@@ -1,37 +1,42 @@
 #section7 {
-  width: 1800px;
   display: flex;
+  flex-wrap: nowrap;
   background-color: #000000;
-  overflow: hidden;
   .contact__start {
-    text-align: center;
+    width: 20vh;
+    text-align: right;
     height: 100vh;
     line-height: 100vh;
-    width: 200px;
+    padding-right: 2vh;
+    font-size: 2vh;
     color: #ffffff;
     border-right: 1px dotted #ffffff;
     border-left: 1px dotted #ffffff;
   }
   .contact__wrap {
-    width: calc(100% - 500px);
-    margin: 0 20vh;
-    overflow: hidden;
+    width: 145vh;
     .ti2 {
-      text-align: center;
+      width: 145vh;
+      height: 20vh;
+      margin-top: 10vh;
+      padding-left: 54vh;
       color: #ffffff;
-      font-size: 20vh;
+      font-size: 14vh;
       font-family: "Cormorant Garamond";
       text-transform: uppercase;
     }
     .contact__info {
       padding-right: 2vh;
       padding-left: 5vh;
-      width: 100%;
+      width: 145vh;
       display: flex;
+      // background-color: #fff;
       height: 30vh;
       justify-content: space-between;
       .info {
-        width: 50%;
+        margin-left: 20vh;
+        margin-top: 12vh;
+        width: 55vh;
         color: #ffffff;
         font-size: 4vh;
         .name {
@@ -56,7 +61,7 @@
         }
       }
       .icon__link {
-        width: 70%;
+        width: 45vh;
         margin-top: 10vh;
         padding-top: 5vh;
         display: flex;
@@ -71,11 +76,11 @@
           &::before {
             position: absolute;
             content: "";
-            width: 60px;
-            height: 60px;
+            width: 7vh;
+            height: 7vh;
             background-image: url(../src/assets/images/github.png);
-            left: -5%;
-            top: -250%;
+            left: -0.5vh;
+            top: -10vh;
             background-position: center;
             background-size: cover;
           }
@@ -90,11 +95,11 @@
           &::before {
             position: absolute;
             content: "";
-            width: 60px;
-            height: 60px;
+            width: 7vh;
+            height: 7vh;
             background-image: url(../src/assets/images/blog.png);
-            left: -35%;
-            top: -250%;
+            left: -1.5vh;
+            top: -10vh;
             background-position: center;
             background-size: cover;
           }
@@ -109,18 +114,18 @@
           &::before {
             position: absolute;
             content: "";
-            width: 60px;
-            height: 60px;
+            width: 7vh;
+            height: 7vh;
             background-image: url(../src/assets/images/ins.png);
-            left: 15%;
-            top: -250%;
+            left: 1vh;
+            top: -10vh;
             background-position: center;
             background-size: cover;
           }
         }
       }
       .img__2 {
-        width: 30%;
+        width: 43vh;
         background-color: #97d139;
         position: relative;
         &:hover {
@@ -128,14 +133,12 @@
             position: absolute;
             content: "kimhyeonbeen";
             text-transform: uppercase;
-            width: 200px;
-            height: 100px;
-            top: 62%;
+            top: 31vh;
             letter-spacing: 15px;
-            font-size: 20px;
+            font-size: 2.5vh;
             color: #ffffff;
             transform: rotate(90deg);
-            left: -43%;
+            left: -23.5vh;
           }
         }
       }
@@ -143,48 +146,3 @@
   }
 }
 
-//반응형
-@media (max-height: 750px) {
-  #section7 {
-    .github {
-      &::before {
-        left: -15% !important;
-        top: -400% !important;
-      }
-    }
-    .blog {
-      &::before {
-        left: -55% !important;
-        top: -400% !important;
-      }
-    }
-    .inst {
-      &::before {
-        left: 2% !important;
-        top: -400% !important;
-      }
-    }
-  }
-}
-@media (max-height: 650px) {
-  #section7 {
-    .github {
-      &::before {
-        left: -33% !important;
-        top: -400% !important;
-      }
-    }
-    .blog {
-      &::before {
-        left: -78% !important;
-        top: -400% !important;
-      }
-    }
-    .inst {
-      &::before {
-        left: -2% !important;
-        top: -400% !important;
-      }
-    }
-  }
-}

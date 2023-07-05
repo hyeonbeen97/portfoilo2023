@@ -3,14 +3,14 @@
   flex-wrap: nowrap;
 
   .deco__wst2 {
-    width: 450vh;
+    width: 470vh;
     // border-bottom: 2px solid #000;
     border-top: 2px solid #000;
     // text-decoration: line-through;
     display: inline-block;
     position: absolute;
-    top: 0;
-    left: -175vh;
+    top: -100vh;
+    left: -200vh;
     text-transform: uppercase;
     font-family: "Cormorant Garamond";
     font-size: 20vh;
@@ -18,6 +18,7 @@
   }
   .react__wrap {
     display: flex;
+    flex-wrap: nowrap;
     position: relative;
     padding: 10vh 0;
     margin-left: 20vh;
