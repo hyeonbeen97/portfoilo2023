@@ -3,16 +3,17 @@
   position: relative;
   overflow: hidden;
   background-color: #dadce4;
+  background: rgb(218, 220, 228);
+  background: linear-gradient(
+    90deg,
+    rgba(218, 220, 228, 1) 0%,
+    rgba(255, 255, 255, 1) 44%,
+    rgba(218, 220, 228, 1) 100%
+  );
   display: flex;
   flex-wrap: nowrap;
 }
-#section3 .arrow3 {
-  width: 60vh;
-  height: 100vh;
-  border-left: 2px solid #ccc;
-  position: relative;
-  margin-right: 30vh;
-}
+
 #section3 .text-title3 {
   color: #000;
   font-family: "Cormorant Garamond";
@@ -30,11 +31,12 @@
 #section3 .img {
   width: 70vh;
   height: 100vh;
-  margin-left: 50vh;
+  margin-left: 30vh;
   position: relative;
-  background-image: url(../../assets/images/site02.png);
-  background-size: cover;
+  background-image: url(../../assets/images/web_st01.jpg);
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 #section3 .text {
   width: 100vh;
