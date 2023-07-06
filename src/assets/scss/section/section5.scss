@@ -1,0 +1,384 @@
+/* section2 */
+#section5 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #131313;
+}
+#section5 .arrow {
+  width: 60vh;
+  height: 100vh;
+  border-left: 2px solid #ccc;
+  position: relative;
+  margin-right: 30vh;
+  background-color: #131313;
+}
+#section5 .arrow em {
+  position: absolute;
+  right: 1vh;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  color: #666;
+  font-family: "Poppins";
+  font-size: 2vh;
+  text-transform: uppercase;
+}
+#section5 .arrow::before {
+  content: "";
+  width: 70.7vh;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: left top;
+  transform: rotate(45deg);
+}
+#section5 .arrow::after {
+  content: "";
+  width: 70.7vh;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: rotate(-45deg);
+}
+#section5 .text-title {
+  color: #ffffff;
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  font-size: 40vh;
+  font-weight: 100;
+  letter-spacing: -2vw;
+  margin-top: -4vw;
+  border-right: 1px solid #f1f1f1;
+}
+#section5 .site {
+  display: flex;
+  background: rgb(255, 255, 255);
+  background-color: #131313;
+  .img__wrap {
+    // box-shadow: -1px -1px 13px #313131, 5px 5px 10px #000000;
+    width: 40vh;
+    height: 40vh;
+    margin-top: 10vh;
+    margin-left: 50vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+
+    //   border: 1px solid #e6e3e3;
+    // padding: 2vh;
+    // border-radius: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      //   border-radius: 100%;
+      //   border: 2px dotted #ffffff;
+    }
+  }
+  .text {
+    width: 100vh;
+    height: 35vh;
+    position: relative;
+    top: 10%;
+    left: 10vh;
+    color: #ffffff;
+    h3 {
+      font-family: "Cormorant Garamond";
+      text-transform: uppercase;
+      letter-spacing: -0.4vh;
+      font-size: 12vh;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1.4vh;
+      font-family: "ChosunNm";
+      line-height: 1.6;
+      color: #c9c6c6;
+    }
+    .btn {
+      margin-bottom: 10vh;
+      position: absolute;
+      top: 34vh;
+      left: -0.5vh;
+      display: flex;
+
+      a {
+        width: 25vh;
+        height: 5vh;
+        line-height: 5vh;
+        color: #61677c;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Cormorant Garamond";
+        font-size: 2.2vh;
+        box-shadow: -2px -2px 15px #313131, 5px 5px 15px #000000;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+          box-shadow: -2px -2px 15px #000000, 2px 2px 15px #413c3c;
+        }
+        &:active {
+          box-shadow: inset 1px 1px 2px #413c3c, inset -1px -1px 2px #000000;
+        }
+        &:last-child {
+          margin-left: 3vh;
+        }
+      }
+    }
+  }
+}
+//--------------
+#section5 .site2 {
+  display: flex;
+  background: rgb(255, 255, 255);
+  background-color: #131313;
+  .img__wrap {
+    box-shadow: -1px -1px 13px #313131, 5px 5px 10px #000000;
+    width: 40vh;
+    height: 40vh;
+    margin-top: 50vh;
+    position: relative;
+    overflow: hidden;
+    //   border: 1px solid #e6e3e3;
+    padding: 2vh;
+    border-radius: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+      border: 2px dotted #ffffff;
+    }
+  }
+  .text {
+    width: 100vh;
+    height: 35vh;
+    position: relative;
+    top: 50vh;
+    left: 10vh;
+    color: #ffffff;
+    h3 {
+      font-family: "Cormorant Garamond";
+      text-transform: uppercase;
+      letter-spacing: -0.4vh;
+      font-size: 12vh;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1.4vh;
+      font-family: "ChosunNm";
+      line-height: 1.6;
+      color: #c9c6c6;
+    }
+    .btn {
+      margin-bottom: 10vh;
+      position: absolute;
+      top: 34vh;
+      left: -0.5vh;
+      display: flex;
+
+      a {
+        width: 25vh;
+        height: 5vh;
+        line-height: 5vh;
+        color: #61677c;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Cormorant Garamond";
+        font-size: 2.2vh;
+        box-shadow: -2px -2px 15px #313131, 5px 5px 15px #000000;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+          box-shadow: -2px -2px 15px #000000, 2px 2px 15px #413c3c;
+        }
+        &:active {
+          box-shadow: inset 1px 1px 2px #413c3c, inset -1px -1px 2px #000000;
+        }
+        &:last-child {
+          margin-left: 3vh;
+        }
+      }
+    }
+  }
+}
+//------------------
+#section5 .site3 {
+  display: flex;
+  background: rgb(255, 255, 255);
+  background-color: #131313;
+  .img__wrap {
+    box-shadow: -1px -1px 13px #313131, 5px 5px 10px #000000;
+    width: 40vh;
+    height: 40vh;
+    margin-top: 10vh;
+
+    position: relative;
+    overflow: hidden;
+    //   border: 1px solid #e6e3e3;
+    padding: 2vh;
+    border-radius: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+      border: 2px dotted #ffffff;
+    }
+  }
+  .text {
+    width: 100vh;
+    height: 35vh;
+    position: relative;
+    top: 10%;
+
+    left: 10vh;
+    color: #ffffff;
+    h3 {
+      font-family: "Cormorant Garamond";
+      text-transform: uppercase;
+      letter-spacing: -0.4vh;
+      font-size: 12vh;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1.4vh;
+      font-family: "ChosunNm";
+      line-height: 1.6;
+      color: #c9c6c6;
+    }
+    .btn {
+      margin-bottom: 10vh;
+      position: absolute;
+      top: 34vh;
+      left: -0.5vh;
+      display: flex;
+
+      a {
+        width: 25vh;
+        height: 5vh;
+        line-height: 5vh;
+        color: #61677c;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Cormorant Garamond";
+        font-size: 2.2vh;
+        box-shadow: -2px -2px 15px #313131, 5px 5px 15px #000000;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+          box-shadow: -2px -2px 15px #000000, 2px 2px 15px #413c3c;
+        }
+        &:active {
+          box-shadow: inset 1px 1px 2px #413c3c, inset -1px -1px 2px #000000;
+        }
+        &:last-child {
+          margin-left: 3vh;
+        }
+      }
+    }
+  }
+}
+//--------------------------
+#section5 .site4 {
+  display: flex;
+  background: rgb(255, 255, 255);
+  background-color: #131313;
+  .img__wrap {
+    box-shadow: -1px -1px 13px #313131, 5px 5px 10px #000000;
+    width: 40vh;
+    height: 40vh;
+    margin-top: 50vh;
+    position: relative;
+    overflow: hidden;
+    //   border: 1px solid #e6e3e3;
+    padding: 2vh;
+    border-radius: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+      border: 2px dotted #ffffff;
+    }
+  }
+  .text {
+    width: 100vh;
+    height: 35vh;
+    position: relative;
+    top: 50vh;
+    left: 10vh;
+    color: #ffffff;
+    h3 {
+      font-family: "Cormorant Garamond";
+      text-transform: uppercase;
+      letter-spacing: -0.4vh;
+      font-size: 12vh;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1.4vh;
+      font-family: "ChosunNm";
+      line-height: 1.6;
+      color: #c9c6c6;
+    }
+    .btn {
+      margin-bottom: 10vh;
+      position: absolute;
+      top: 34vh;
+      left: -0.5vh;
+      display: flex;
+
+      a {
+        width: 25vh;
+        height: 5vh;
+        line-height: 5vh;
+        color: #61677c;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Cormorant Garamond";
+        font-size: 2.2vh;
+        box-shadow: -2px -2px 15px #313131, 5px 5px 15px #000000;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+          box-shadow: -2px -2px 15px #000000, 2px 2px 15px #413c3c;
+        }
+        &:active {
+          box-shadow: inset 1px 1px 2px #413c3c, inset -1px -1px 2px #000000;
+        }
+        &:last-child {
+          margin-left: 3vh;
+        }
+      }
+    }
+  }
+}
