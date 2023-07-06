@@ -2,40 +2,70 @@ body {
   overflow-x: hidden;
 }
 #parallax__cont {
-  overscroll-behavior: none;
-  width: fit-content;
-  height: 100vh;
-  display: flex;
-}
+  background-color: #dadce4;
 
-#section1 {
+  width: fit-content;
   display: flex;
   flex-wrap: nowrap;
-  height: 100vh;
-  position: relative;
+  color: #fff;
+}
+#section1 {
+}
+#section2 {
+}
+#section3 {
+  background-color: #555;
+}
+#section4 {
+  background-color: #666;
+}
+#section5 {
+  background-color: #777;
+}
+#section6 {
+  background-color: #888;
+}
+#section7 {
+  background-color: #999;
+}
+#section8 {
+  background-color: #111;
+}
+#section9 {
+  background-color: #222;
 }
 
+.parallax__item {
+  height: 100vh;
+  position: relative;
+  font-size: 40px;
+}
+
+/* section1 */
+#section1 {
+  background-color: #dadce4;
+
+  display: flex;
+  flex-wrap: nowrap;
+}
 #section1 .img {
   width: 50vh;
   height: 80vh;
-  visibility: hidden;
+  /* visibility: hidden; */
   overflow: hidden;
 }
-
 #section1 .img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transform-origin: left;
 }
-
 #section1 .circle {
   width: 200px;
   height: 200px;
   line-height: 200px;
   border-radius: 50%;
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
   position: absolute;
   left: 40vh;
   top: 67vh;
@@ -43,30 +73,34 @@ body {
   font-family: Jura;
   font-size: 20px;
   text-transform: uppercase;
-}
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: -2px -2px 20px #dadce4, 5px 5px 20px #babecc;
 
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
 #section1 .desc {
   color: #333;
-  width: 35vh;
+  width: 36vh;
   font-family: "IropkeBatang";
   margin-left: 6vh;
   margin-top: 4vh;
+  margin-right: 6vh;
   line-height: 1.5;
+  font-size: 16px;
 }
-
 #section1 .desc span {
   display: inline-block;
   text-align: right;
-  width: 35vh;
-  margin-top: 10vh;
+  width: 100%;
+  margin-top: 10px;
   color: #666;
 }
-
 #section1 .text-wrap {
   margin-left: 30vh;
 }
-
-#section1 .text-wrap > div {
+.text-wrap > div {
   color: #000;
   font-size: 47vh;
   font-family: "Cormorant Garamond";
@@ -76,89 +110,70 @@ body {
   position: relative;
   z-index: 100;
 }
-
-#section1 .text-wrap > div:nth-child(2) {
+.text-wrap > div:nth-child(2) {
   padding-left: 50vh;
 }
-
-#section1 .text-wrap > div:nth-child(3) {
+.text-wrap > div:nth-child(3) {
   padding-left: 10vh;
 }
-
 #section1 .about {
-  width: 70vh;
+  width: 700px;
   height: 100vh;
   overflow: hidden;
-  margin-left: -100vh;
-  visibility: hidden;
+  margin-left: -200px;
 }
-
 #section1 .about img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: bottom;
   transform-origin: left;
 }
-
 #section1 .about-text {
-  color: #616161;
-  width: 90vh;
-  margin-left: -5vh;
+  color: #222;
+  width: 1500px;
   font-family: "IropkeBatang";
   font-family: "ChosunNm";
-  font-size: 3.5vh;
-  padding: 1vh 0;
+  font-size: 34px;
+  padding: 10px 80px;
   white-space: pre;
   line-height: 1.5;
-  margin-right: 50vh;
   position: relative;
 }
-
 #section1 .about-text em {
-  padding: 5vh;
+  position: relative;
+  color: #fff;
+  padding: 5px;
 }
-
+#section1 .about-text em::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  z-index: -1;
+}
 #section1 .about-text .add1 {
-  width: 34vh;
-  font-size: 1.6vh;
+  width: 340px;
+  font-size: 14px;
   white-space: normal;
   line-height: 1.3;
   position: absolute;
-  margin-top: 5vh;
-  left: 10vh;
-  bottom: 20vh;
+  left: 80px;
+  bottom: 60px;
   text-align: justify;
   color: #858585;
 }
-
 #section1 .about-text .add2 {
-  width: 34vh;
-  font-size: 1.6vh;
+  width: 340px;
+  font-size: 14px;
   white-space: normal;
   line-height: 1.3;
   position: absolute;
-  margin-top: 5vh;
-  left: 50vh;
-  bottom: 22.5vh;
+  left: 470px;
+  bottom: 40px;
   text-align: justify;
   color: #858585;
 }
-//반응형
-@media (max-height: 750px) {
-  #section1 .circle {
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-  }
-
-  @media (max-height: 650px) {
-    #section1 .circle {
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
-    }
-  }
-}
-
-//section1

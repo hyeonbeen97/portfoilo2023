@@ -1,141 +1,126 @@
+/* section2 */
 #section2 {
+  position: relative;
+  overflow: hidden;
+  background-color: #dadce4;
   display: flex;
   flex-wrap: nowrap;
+}
+#section2 .arrow {
+  width: 60vh;
+  height: 100vh;
+  border-left: 2px solid #ccc;
   position: relative;
-  .deco__wst {
-    width: 500vh;
-    position: absolute;
-    // border-bottom: 2px solid #000;
-    // text-decoration: line-through;
-    display: inline-block;
-    left: -232vh;
-    top: 0;
-    // text-transform:lowercase;
-    font-family: "Cormorant Garamond";
-    font-size: 25vh;
-    font-weight: 100;
+  margin-right: 30vh;
+}
+#section2 .arrow em {
+  position: absolute;
+  right: 1vh;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  color: #666;
+  font-family: "Poppins";
+  font-size: 2vh;
+  text-transform: uppercase;
+}
+#section2 .arrow::before {
+  content: "";
+  width: 70.7vh;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: left top;
+  transform: rotate(45deg);
+}
+#section2 .arrow::after {
+  content: "";
+  width: 70.7vh;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: rotate(-45deg);
+}
+#section2 .text-title {
+  color: #000;
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  font-size: 40vh;
+  font-weight: 100;
+  letter-spacing: -2vw;
+  margin-top: -23vw;
+  border-right: 1px solid #f1f1f1;
+}
+#section2 .site {
+  display: flex;
+}
+#section2 .img {
+  width: 70vh;
+  height: 100vh;
+  margin-left: 50vh;
+  position: relative;
+  background-image: url(../../assets/images/site02.png);
+  background-size: cover;
+  background-position: center;
+}
+#section2 .text {
+  width: 100vh;
+  height: 35vh;
+  position: relative;
+  top: 45%;
+  left: 10vh;
+  color: #000;
+}
+#section2 .text h3 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  letter-spacing: -0.4vh;
+  font-size: 12vh;
+  line-height: 1.2;
+}
+#section2 .text p {
+  font-size: 1.4vh;
+  font-family: "ChosunNm";
+  line-height: 1.6;
+  color: #333;
+  padding-left: 4vh;
+}
+#section2 .btn {
+  margin-bottom: 10vh;
+  position: absolute;
+  top: 31vh;
+  left: 30vh;
+  display: flex;
+}
+#section2 .btn a {
+  width: 25vh;
+  height: 5vh;
+  line-height: 5vh;
+  color: #61677c;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-size: 2.2vh;
+  box-shadow: -2px -2px 20px #f4f5f8, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  &:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
   }
-  .wst__wrap {
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    padding: 10vh 0;
-    margin-left: 30vh;
-
-    .wst__img {
-      
-      width: 70vh;
-      height: 80vh;
-      overflow: hidden;
-      visibility: hidden;
-    }
-
-    .wst__img img {
-      
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: bottom;
-
-      transform-origin: left;
-    }
-    .wst__img__mini {
-      width: 33vh;
-      height: 25vh;
-      top: 15vh;
-      left: 60vh;
-      visibility: hidden;
-      position: absolute;
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform-origin: left;
-
-        filter: saturate(0);
-        &:hover {
-          filter: saturate(1);
-          transform: scale(101%);
-        }
-        position: relative;
-      }
-    }
-    .circle2 {
-      position: absolute;
-        width: 200px;
-        height: 50px;
-        text-align: center;
-        line-height: 50px;
-        color: #fff;
-        font-size: 3vh;
-        font-family: "Cormorant Garamond";
-        left: 74vh;
-        top: 83vh;
-        background-color: #fff;
-        text-shadow: 1px 1px 0 #fff;
-        color: #61677c;
-        font-weight: bold;
-        box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-        font-weight: 600;
-      
-        &:hover {
-          box-shadow: -2px -2px 5px #fff, 2px 2px 5px
-        }
-      
-        &:active {
-          box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
-        }
-    }
-    .wst__text__wrap {
-      word-break: keep-all;
-      width: 69vh;
-      // background-color: #c41e1e;
-      margin-left: 40vh;
-      h3 {
-        font-family: jura;
-        font-size: 8vh;
-        margin-bottom: 5vh;
-      }
-      .wst__desc {
-        color: #555;
-        display: inline-block;
-        font-size: 1.8vh;
-        line-height: 1.5;
-        margin-bottom: 10vh;
-      }
-      .wst__desc__e {
-        text-align: right;
-        margin-left: 5vh;
-        font-size: 1.5vh;
-        color: #9caa86;
-      }
-    }
+  &:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
   }
 }
-//반응형
-@media (max-height: 700px) {
-  .wst__wrap {
-    .circle2 {
-      top: 83.5vh !important;
-      left: 78vh !important;
-        width: 150px !important;
-        height: 40px !important;
-        line-height: 40px !important;
-    }
-  }
-
-  @media (max-height: 600px) {
-    .wst__wrap {
-      .circle2 {
-      top: 83vh !important;
-        left: 78vh !important;
-        width: 150px !important;
-        height: 40px !important;
-        line-height: 40px !important;
-      }
-    }
-  }
+#section2 .btn a:last-child {
+  margin-left: 3vh;
 }

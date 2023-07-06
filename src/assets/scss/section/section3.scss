@@ -1,120 +1,92 @@
+/* section3 */
 #section3 {
+  position: relative;
+  overflow: hidden;
+  background-color: #dadce4;
   display: flex;
   flex-wrap: nowrap;
-
-  .deco__wst2 {
-    width: 520vh;
-    display: inline-block;
-    position: absolute;
-    top: -100vh;
-    left: -229vh;
-    // text-transform: uppercase;
-    font-family: "Cormorant Garamond";
-    font-size: 25vh;
-    font-weight: 100;
+}
+#section3 .arrow3 {
+  width: 60vh;
+  height: 100vh;
+  border-left: 2px solid #ccc;
+  position: relative;
+  margin-right: 30vh;
+}
+#section3 .text-title3 {
+  color: #000;
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  font-size: 40vh;
+  font-weight: 100;
+  letter-spacing: -2vw;
+  margin-top: -23vw;
+  border-right: 1px solid #f1f1f1;
+}
+#section3 .site3 {
+  display: flex;
+}
+#section3 .img {
+  width: 70vh;
+  height: 100vh;
+  margin-left: 50vh;
+  position: relative;
+  background-image: url(../../assets/images/site02.png);
+  background-size: cover;
+  background-position: center;
+}
+#section3 .text {
+  width: 100vh;
+  height: 35vh;
+  position: relative;
+  top: 45%;
+  left: 10vh;
+  color: #000;
+}
+#section3 .text h3 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  letter-spacing: -0.4vh;
+  font-size: 12vh;
+  line-height: 1.2;
+}
+#section3 .text p {
+  font-size: 1.4vh;
+  font-family: "ChosunNm";
+  line-height: 1.6;
+  color: #333;
+}
+#section3 .btn3 {
+  margin-bottom: 10vh;
+  position: absolute;
+  top: 31vh;
+  left: 30vh;
+  display: flex;
+}
+#section3 .btn3 a {
+  width: 25vh;
+  height: 5vh;
+  line-height: 5vh;
+  color: #61677c;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-size: 2.2vh;
+  box-shadow: -2px -2px 20px #f4f5f8, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  &:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
   }
-  .react__wrap {
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    padding: 10vh 0;
-    margin-left: 20vh;
-    padding-left: 40vh;
-    .react__img {
-      width: 100vh;
-      height: 80vh;
-      visibility: hidden;
-      overflow: hidden;
-      object-fit: cover;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        transform-origin: left;
-        filter: brightness(0.9);
-      }
-    }
-  }
-  .react__text__wrap {
-    position: relative;
-    padding: 15vh 0;
-    margin-left: 15vh;
-    h3 {
-      text-align: left;
-      width: 45vh;
-      font-family: jura;
-      font-size: 8vh;
-      margin-bottom: 8%;
-    }
-    .react__desc {
-      word-break: keep-all;
-      width: 45vh;
-      text-align: right;
-      color: #616161;
-      font-weight: 100;
-      font-size: 1.6vh;
-      margin-bottom: 5vh;
-    }
-    .react__desc__e {
-      float: right;
-      word-break: break-all;
-      text-align: right;
-      width: 45vh;
-      color: #a5a381;
-      font-weight: 100;
-      font-size: 1.5vh;
-    }
-    .circle3 {
-      position: absolute;
-      width: 200px;
-      height: 50px;
-      text-align: center;
-      line-height: 50px;
-      color: #fff;
-      font-size: 3vh;
-      font-family: "Cormorant Garamond";
-      left: 20vh;
-      top: 82vh;
-      background-color: #fff;
-text-shadow: 1px 1px 0 #fff;
-        color: #61677c;
-          font-weight: bold;
-          box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
-          transition: all 0.2s ease-in-out;
-          cursor: pointer;
-          font-weight: 600;
-      &:hover {
-        box-shadow: -2px -2px 5px #fff, 2px 2px 5px
-      }
-      &:active {
-        box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
-      }
-    }
+  &:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
   }
 }
-// //반응형
-@media (max-height: 700px) {
-  #section3 {
-    .circle3 {
-      left: 23vh !important;
-      width: 150px !important;
-      height: 40px !important;
-      line-height: 40px !important;
-    }
-  }
-}
-@media (max-height: 600px) {
-  #section3 {
-    .circle3 {
-            left: 18vh !important;
-              width: 150px !important;
-              height: 40px !important;
-              line-height: 40px !important;
-    }
-        .react__desc__e {
-          display: none;
-        }
-  }
+#section3 .btn3 a:last-child {
+  margin-left: 3vh;
 }
