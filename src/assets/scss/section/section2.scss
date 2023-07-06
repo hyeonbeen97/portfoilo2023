@@ -4,6 +4,7 @@
   overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
+  background-color: #fff;
 }
 #section2 .arrow {
   width: 60vh;
@@ -80,7 +81,7 @@
   width: 100vh;
   height: 35vh;
   position: relative;
-  top: 45%;
+  top: 45vh;
   left: 10vh;
   color: #000;
 }
@@ -92,6 +93,7 @@
   line-height: 1.2;
 }
 #section2 .text p {
+  display: inline-block;
   font-size: 1.4vh;
   font-family: "ChosunNm";
   line-height: 1.6;
@@ -102,7 +104,7 @@
   margin-bottom: 10vh;
   position: absolute;
   top: 31vh;
-  left: 30vh;
+  left: 4vh;
   display: flex;
 }
 #section2 .btn a {
@@ -111,7 +113,6 @@
   line-height: 5vh;
   color: #61677c;
   font-weight: bold;
-  display: inline-block;
   border-radius: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -130,4 +131,10 @@
 }
 #section2 .btn a:last-child {
   margin-left: 3vh;
+}
+
+@media (max-height:630px){
+  #section2 .btn {
+      top: 38vh;
+    }
 }

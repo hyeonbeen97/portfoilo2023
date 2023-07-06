@@ -42,7 +42,7 @@
   width: 100vh;
   height: 35vh;
   position: relative;
-  top: 45%;
+  top: 10vh;
   left: 10vh;
   color: #000;
 }
@@ -63,7 +63,7 @@
   margin-bottom: 10vh;
   position: absolute;
   top: 31vh;
-  left: 30vh;
+  left: 0vh;
   display: flex;
 }
 #section3 .btn3 a {
@@ -91,4 +91,14 @@
 }
 #section3 .btn3 a:last-child {
   margin-left: 3vh;
+}
+@media (max-height:630px) {
+  #section3 .btn3 {
+    top: 32vh;
+  }
+}
+@media (max-height:570px) {
+  #section3 .btn3 {
+    top: 40vh;
+  }
 }

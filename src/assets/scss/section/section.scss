@@ -5,21 +5,9 @@ body {
   width: fit-content;
   display: flex;
   flex-wrap: nowrap;
-  color: #fff;
+    background-color: #131313;
 }
 
-#section6 {
-  background-color: #888;
-}
-#section7 {
-  background-color: #999;
-}
-#section8 {
-  background-color: #111;
-}
-#section9 {
-  background-color: #222;
-}
 
 .parallax__item {
   height: 100vh;
@@ -31,6 +19,7 @@ body {
 #section1 {
   display: flex;
   flex-wrap: nowrap;
+  background-color: #fff;
 }
 #section1 .img {
   width: 50vh;

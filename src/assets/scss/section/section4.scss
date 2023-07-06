@@ -30,7 +30,7 @@
   width: 100vh;
   height: 35vh;
   position: relative;
-  top: 45%;
+  top: 24%;
   left: 10vh;
   color: #000;
 }
@@ -80,4 +80,15 @@
 }
 #section4 .btn4 a:last-child {
   margin-left: 3vh;
+}
+@media (max-height:630px) {
+  #section4 .btn4 {
+    top: 32vh;
+  }
+}
+
+@media (max-height:570px) {
+  #section4 .btn4 {
+    top: 40vh;
+  }
 }
