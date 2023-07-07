@@ -5,9 +5,7 @@ body {
   width: fit-content;
   display: flex;
   flex-wrap: nowrap;
-    background-color: #131313;
 }
-
 
 .parallax__item {
   height: 100vh;
@@ -48,8 +46,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
-  box-shadow: inset -2px -2px 5px #cfcfcf, 5px 5px 8px #b7bac5;
-
   transition: all 0.2s ease-in-out;
   font-weight: 600;
 }
