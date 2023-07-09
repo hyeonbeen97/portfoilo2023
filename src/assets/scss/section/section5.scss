@@ -6,9 +6,9 @@
   flex-wrap: nowrap;
   background-color: #ffffff;
   .contact__wrap {
-    margin-left: -5vh;
+
     background-color: #ffffff;
-    padding: 8vh 5vh;
+    padding: 8vh 10vh;
     h3 {
       margin-left: -40vh;
       font-family: "Cormorant Garamond";
@@ -134,7 +134,7 @@
 }
 #section5 .arrow em {
   position: absolute;
-  left: 22vh;
+  left: 7vh;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
