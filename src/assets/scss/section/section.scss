@@ -149,3 +149,12 @@ body {
   text-align: justify;
   color: #858585;
 }
+@media (max-height:650){
+  body {
+      height: auto;
+      overflow-y: hidden;
+      #parallax__cont {
+      height: auto;
+        }
+    }
+}
