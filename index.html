@@ -65,7 +65,7 @@
             <div class="arrow"><em>site coding</em></div>
             <h2 class="text-title">site coding</h2>
             <div class="site s1">
-                <div class="img__wrap">
+                <div class="img__wrap1">
                   <div class="img"></div>
                 </div>
                 <div class="text">
@@ -84,7 +84,7 @@
                 </div>
             </div>  
             <div class="site s2">
-                <div class="img__wrap">
+                <div class="img__wrap2">
                   <div class="img"></div>
                 </div>
                 <div class="text">
@@ -105,7 +105,7 @@
                 </div>
             </div>  
             <div class="site s3">
-                <div class="img__wrap">
+                <div class="img__wrap3">
                   <div class="img"></div>
                 </div>
                 <div class="text">
@@ -129,10 +129,16 @@
 
         <section id="section3" class="parallax__item">
             <div class="arrow"><em>script coding</em></div>
-            <h2 class="text-title">script coding</h2>
+            <h2 class="text-title2">script coding</h2>
             <div class="script__mouse">
-                <div class="img"><div class="img2"></div></div>
-                
+                <div class="script__img1">
+                  <div class="img">
+                  </div>
+                </div>                
+                <div class="img2__Wrap">
+                  <div class="img2"></div>  
+                </div>
+
                 <div class="text">
                     <h3>MOUSE<br> EFFECT</h3>
                     <p>
@@ -147,7 +153,13 @@
                 </div>
             </div>
             <div class="script__slider">
-                <div class="img"><div class="img2"></div></div>
+                                <div class="script__img1">
+                                  <div class="img">
+                                  </div>
+                                </div>
+                                <div class="img2__Wrap">
+                                  <div class="img2"></div>
+                                </div>
                 
                 <div class="text">
                     <h3>SLIDER<br> EFFECT</h3>
@@ -163,7 +175,13 @@
                 </div>
             </div>
             <div class="script__pallax">
-                <div class="img"><div class="img2"></div></div>
+                                                <div class="script__img1">
+                                                  <div class="img">
+                                                  </div>
+                                                </div>
+                                                <div class="img2__Wrap">
+                                                  <div class="img2"></div>
+                                                </div>
                 
                 <div class="text">
                     <h3>PALLAX<br> EFFECT</h3>
@@ -181,7 +199,13 @@
                 </div>
             </div>
             <div class="script__quiz">
-                <div class="img"><div class="img2"></div></div>
+                                                <div class="script__img1">
+                                                  <div class="img">
+                                                  </div>
+                                                </div>
+                                                <div class="img2__Wrap">
+                                                  <div class="img2"></div>
+                                                </div>
                 
                 <div class="text">
                     <h3>QUIZ<br> EFFECT</h3>
@@ -263,6 +287,13 @@
         gsap.set(".text-wrap .t1", { autoAlpha: 0, y: 30 });
         gsap.set(".text-wrap .t2", { autoAlpha: 0, y: 30 });
         gsap.set(".text-wrap .t3", { autoAlpha: 0, y: 30 });
+        gsap.set(".text-title", {y: -600});
+        gsap.set(".text-title2", { y: -600 });
+        gsap.set(".php__desc__e", { autoAlpha: 0 });
+        gsap.set(".script__img1 .img", { scale: 2 });
+        gsap.set(".img2__Wrap .img2", { scale: 2 });
+
+
 
         setTimeout(() => {
           let tl = gsap.timeline();
@@ -281,8 +312,7 @@
           });
           tl.to(
             "#section1 .circle",
-            { duration: 1, autoAlpha: 1, rotation: 0, x: 0, ease: Power2.out },
-            "-=0.5"
+            { duration: 0.5, autoAlpha: 1, rotation: 0, x: 0  },
           );
 
           tl.to(".text-wrap .t1", {
@@ -303,7 +333,7 @@
             y: 0,
             ease: Power1.out,
           });
-        }, 100);
+        }, 500);
 
 
 
@@ -326,14 +356,26 @@
         });
         
       //섹션 1
+       gsap.to(".text-wrap .t1", {
+          duration: 1,
+          x: 800,
+          scrollTrigger: {
+            trigger: ".text-wrap",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right left",
+            scrub: 5,
+            markers: false,
+          },
+        });
 
-      gsap.to(".text-wrap .t2", {
+        gsap.to(".text-wrap .t2", {
           duration: 1,
           x: -900,
           scrollTrigger: {
             trigger: ".text-wrap",
             containerAnimation: scrollTween,
-            start: "left 40%",
+            start: "left right",
             end: "right left",
             scrub: 0.5,
             markers: false,
@@ -342,7 +384,7 @@
 
         gsap.to(".text-wrap .t3", {
           duration: 1,
-          x: -300,
+          x: 700,
           scrollTrigger: {
             trigger: ".text-wrap",
             containerAnimation: scrollTween,
@@ -352,37 +394,218 @@
             markers: false,
           },
         });
-        ///////---------------------------------------
-        gsap.set(".img__wrap", { autoAlpha: 1 });
-        gsap.from(".img__wrap", {
+        ///////---------------------------------------섹션2 
+      gsap.to(".text-title", {
+          duration: 3,
+          y: 500,
+          scrollTrigger: {
+            trigger: ".text-title",
+            containerAnimation: scrollTween,
+            start: "left right",
+            end: "right left",
+            scrub: 3,
+            markers: false,
+          },
+        });
+
+        gsap.to(".text-title2", {
+          duration: 3,
+          y: 500,
+          scrollTrigger: {
+            trigger: ".text-title2",
+            containerAnimation: scrollTween,
+            start: "left right",
+            end: "right left",
+            scrub: 3,
+            markers: false,
+          },
+        });
+
+        // 사진
+        gsap.set(".img__wrap1", { autoAlpha: 1 });
+
+        gsap.from(".img__wrap1", {
           duration: 1.5,
           xPercent: -100,
           ease: "power2.out",
           scrollTrigger: {
             containerAnimation: scrollTween,
-            trigger: ".img__wrap",
-            start: "top 10%", // 섹션 상단이 뷰포트의 10%에 도달했을 때 애니메이션 시작
-            end: "bottom bottom", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
-            scrub: 2, // 스크롤 속도에 따라 애니메이션 속도 조절
+            trigger: ".img__wrap1",
+            start: "left 30%", // 섹션 상단이 뷰포트의 30%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
             markers: false,
           },
         });
-        gsap.from(".img__wrap .img", {
+        gsap.from(".img__wrap1 .img", {
           duration: 1.5,
           xPercent: 100,
-          scale: 1.2,
           ease: "power2.out",
           scrollTrigger: {
-            trigger: ".img__wrap",
+            trigger: ".img__wrap1",
             containerAnimation: scrollTween,
-            start: "top 10%", // 섹션 상단이 뷰포트의 10%에 도달했을 때 애니메이션 시작
-            end: "bottom bottom", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
-            scrub: 2, // 스크롤 속도에 따라 애니메이션 속도 조절
+            start: "top 30%", // 섹션 상단이 뷰포트의 30%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
             delay: -1.5, // 애니메이션 시작 전 대기 시간
             markers: false,
           },
         });
-             });//전체 박스
+        //리액트사진
+        gsap.set(".img__wrap2", { autoAlpha: 1 });
+
+        gsap.from(".img__wrap2", {
+          duration: 1.5,
+          xPercent: -100,
+          ease: "power2.out",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: ".img__wrap2",
+            start: "left 30%", // 섹션 상단이 뷰포트의 30%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
+            markers: false,
+          },
+        });
+        gsap.from(".img__wrap2 .img", {
+          duration: 1.5,
+          xPercent: 100,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".img__wrap2",
+            containerAnimation: scrollTween,
+            start: "top 30%", // 섹션 상단이 뷰포트의 30%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
+            delay: -1.5, // 애니메이션 시작 전 대기 시간
+            markers: false,
+          },
+        });
+        //php사진
+        gsap.set(".img__wrap3", { autoAlpha: 1 });
+
+        gsap.from(".img__wrap3", {
+          duration: 1.5,
+          xPercent: -100,
+          ease: "power2.out",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: ".img__wrap3",
+            start: "left 30%", // 섹션 상단이 뷰포트의 30%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
+            markers: false,
+          },
+        });
+        gsap.from(".img__wrap3 .img", {
+          duration: 1.5,
+          xPercent: 100,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".img__wrap3",
+            containerAnimation: scrollTween,
+            start: "top 30%", // 섹션 상단이 뷰포트의 30%에 도달했을 때 애니메이션 시작
+            end: "bottom 20%", // 섹션 하단이 뷰포트의 bottom에 도달했을 때 애니메이션 완료
+            delay: -1.5, // 애니메이션 시작 전 대기 시간
+            markers: false,
+          },
+        });
+        //-----------------스크립트
+        gsap.to(".script__mouse .script__img1 .img", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__mouse .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+        gsap.to(".script__mouse .img2__Wrap .img2", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__mouse .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 20%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+        //-------슬라이드
+        gsap.to(".script__slider .script__img1 .img", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__slider .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+        gsap.to(".script__slider .img2__Wrap .img2", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__slider .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 20%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+        //-------패럴럭스
+        gsap.to(".script__pallax .script__img1 .img", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__pallax .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+        gsap.to(".script__pallax .img2__Wrap .img2", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__pallax .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 20%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+        //-------퀴즈
+        gsap.to(".script__quiz .script__img1 .img", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__quiz .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 40%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+        gsap.to(".script__quiz .img2__Wrap .img2", {
+          duration: 0.5,
+          scale: 1,
+          ease: "bounce({strength:0.1, endAtStart:true})",
+          scrollTrigger: {
+            trigger: ".script__quiz .script__img1 .img",
+            containerAnimation: scrollTween,
+            start: "left 20%",
+            end: "right 50%",
+            markers: false,
+          },
+        });
+      });//전체 박스
     </script>
 
 <script>

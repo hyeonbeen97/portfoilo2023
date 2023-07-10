@@ -46,7 +46,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s;
   font-weight: 600;
 }
 #section1 .desc {
@@ -57,7 +57,7 @@ body {
   margin-top: 4vh;
   margin-right: 6vh;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1.6vh;
 }
 #section1 .desc span {
   display: inline-block;
@@ -100,10 +100,10 @@ body {
 }
 #section1 .about-text {
   color: #222;
-  width: 1500px;
+  width: 150vh;
   font-family: "IropkeBatang";
   font-family: "ChosunNm";
-  font-size: 34px;
+  font-size: 3.4vh;
   padding: 10px 80px;
   white-space: pre;
   line-height: 1.5;
