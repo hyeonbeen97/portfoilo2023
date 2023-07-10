@@ -152,7 +152,7 @@ body {
 @media (max-height:650){
   body {
       height: auto;
-      overflow-y: hidden;
+      overflow-y:auto;
       #parallax__cont {
       height: auto;
         }
