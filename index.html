@@ -705,44 +705,7 @@
           },
         });
         //동그라미
-        gsap.to(".site.s1 .btn", {
-          duration: 1,
-          x: 270,
-          rotation: 360,
-          scrollTrigger: {
-            trigger: ".site.s1 .btn",
-            containerAnimation: scrollTween,
-            start: "right right",
-            end: "right 60%",
-            scrub: 1,
-            markers: false,
-          },
-        });
-        gsap.to(".site.s2 .btn", {
-          duration: 1,
-          rotation: 360,
-          scrollTrigger: {
-            trigger: ".site.s2 .btn",
-            containerAnimation: scrollTween,
-            start: "right right",
-            end: "right 60%",
-            scrub: 1,
-            markers: false,
-          },
-        });
-        gsap.to(".site.s3 .btn", {
-          duration: 1,
-          y: -270,
-          rotation: 360,
-          scrollTrigger: {
-            trigger: ".site.s3 .btn",
-            containerAnimation: scrollTween,
-            start: "right right",
-            end: "right 60%",
-            scrub: 1,
-            markers: false,
-          },
-        });
+
         ////스크립트 타이틀
         gsap.set(".script__mouse .text h3 p", { x: -160 });
         gsap.set(".script__quiz .text h3 p", { x: -160 });
